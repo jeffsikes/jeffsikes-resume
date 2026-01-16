@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Sikes - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #2c3e50;
+            background: white;
+        }
+
+        .container {
+            display: flex;
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+        }
+
+        .sidebar {
+            width: 2.5in;
+            background: #2c3e50;
+            color: white;
+            padding: 0.4in 0.25in 0.4in 0.15in;
+            flex-shrink: 0;
+        }
+
+        .contact-item i {
+            width: 1em;
+            text-align: center;
+            margin-right: 0.08in;
+            color: #3498db;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 0.4in 0.35in;
+        }
+        
+        header {
+            margin-bottom: 0.25in;
+        }
+        
+        h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #1a252f;
+            margin-bottom: 0.05in;
+            line-height: 1.1;
+        }
+        
+        .title {
+            font-size: 11pt;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 0.15in;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+        }
+        
+        .contact-item {
+            margin-bottom: 0.08in;
+            font-size: 9pt;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .sidebar h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5pt;
+            margin-bottom: 0.1in;
+            margin-top: 0.15in;
+            padding-bottom: 0.05in;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .sidebar h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        .skill-item {
+            margin-bottom: 0.06in;
+            font-size: 9.5pt;
+            line-height: 1.3;
+        }
+        
+        .main-content h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            margin-bottom: 0.12in;
+            padding-bottom: 0.05in;
+            border-bottom: 2px solid #3498db;
+            letter-spacing: 0.5pt;
+        }
+        
+        .summary {
+            margin-bottom: 0.2in;
+            text-align: justify;
+            font-size: 10pt;
+            line-height: 1.6;
+        }
+        
+        .job {
+            margin-bottom: 0.2in;
+        }
+        
+        .job-header {
+            margin-bottom: 0.08in;
+        }
+        
+        .job-title {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #3498db;
+        }
+        
+        .dates {
+            font-size: 9pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .job-description {
+            font-size: 9.5pt;
+            margin-bottom: 0.08in;
+            line-height: 1.5;
+        }
+        
+        ul {
+            margin-left: 0.15in;
+            list-style-type: disc;
+        }
+        
+        li {
+            margin-bottom: 0.06in;
+            font-size: 9.5pt;
+            line-height: 1.45;
+        }
+        
+        .education-item {
+            margin-bottom: 0.12in;
+        }
+
+        .degree {
+            font-weight: 700;
+            font-size: 9pt;
+            line-height: 1.3;
+        }
+
+        .school {
+            font-size: 8.5pt;
+            line-height: 1.3;
+        }
+
+        .honors {
+            font-size: 8pt;
+            font-style: italic;
+            line-height: 1.3;
+        }
+        
+        @media print {
+            @page {
+                size: letter;
+                margin: 0;
+            }
+
+            html, body {
+                height: 11in;
+                width: 8.5in;
+                overflow: hidden;
+            }
+
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .container {
+                position: relative;
+                width: 8.5in;
+                height: 11in;
+                min-height: 11in;
+                max-height: 11in;
+                overflow: hidden;
+            }
+
+            .sidebar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 2.5in;
+                height: 11in;
+            }
+
+            .main-content {
+                margin-left: 2.5in;
+                height: 11in;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Contact</h2>
+            <div class="contact-item">
+                <i class="fas fa-location-dot"></i> Austin, TX
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> <a href="mailto:jeff@box464.com">jeff@box464.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i> 214-914-3228
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i> <a href="https://jeffsikes.com">jeffsikes.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/jsikes">linkedin.com/in/jsikes</a>
+            </div>
+            
+            <h2>Leadership</h2>
+            <div class="skill-item">Team Building & Mentoring</div>
+            <div class="skill-item">Cross-functional Collaboration</div>
+            <div class="skill-item">Vendor Management</div>
+            <div class="skill-item">Budget Planning</div>
+            <div class="skill-item">Agile Methodologies</div>
+
+            <h2>Infrastructure</h2>
+            <div class="skill-item">Cloud Migration</div>
+            <div class="skill-item">Load Balancing</div>
+            <div class="skill-item">Cloudflare</div>
+            <div class="skill-item">Database Administration</div>
+            <div class="skill-item">Disaster Recovery</div>
+
+            <h2>Platforms & Systems</h2>
+            <div class="skill-item">API & Systems Integration</div>
+            <div class="skill-item">Aptify AMS</div>
+            <div class="skill-item">Salesforce</div>
+            <div class="skill-item">Higher Logic</div>
+            <div class="skill-item">CraftCMS</div>
+            <div class="skill-item">Microsoft/.NET Ecosystem</div>
+            
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">M.S. Computer Education & Cognitive Systems</div>
+                <div class="school">University of North Texas</div>
+                <div class="honors">Top 10% of Program</div>
+            </div>
+            <div class="education-item">
+                <div class="degree">B.A. Psychology</div>
+                <div class="school">Lyon College</div>
+                <div class="honors">Cum Laude</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <header>
+                <h1>Jeff Sikes</h1>
+                <div class="title">Director of Application Development</div>
+            </header>
+            
+            <section>
+                <h2>Professional Summary</h2>
+                <div class="summary">
+                    Technology leader with 13+ years building and scaling engineering teams in mission-driven nonprofit organizations. Proven track record managing cross-functional technical operations, platform modernizations, and vendor relationships while balancing limited resources with organizational impact.
+                </div>
+            </section>
+            
+            <section>
+                <h2>Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Director of Application Development</div>
+                        <div class="company">American Association of Nurse Practitioners</div>
+                        <div class="dates">Austin, TX | 2023–2025</div>
+                    </div>
+                    <div class="job-description">
+                        Led cross-functional team of 6 staff (3 developers, 2 project managers, 1 data analyst) supporting 460,000 nurse practitioners through member services, education, conferences, and political advocacy.
+                    </div>
+                    <ul>
+                        <li>Served as acting VP of IT for one year, overseeing application development and infrastructure teams (9 total staff)</li>
+                        <li>Implemented Zendesk across departments, reducing support call volume through knowledge base; system ownership successfully transitioned to non-IT staff</li>
+                        <li>Modernized infrastructure from physical servers to cloud (Rackspace → Aptify Cloud), implementing load balancing, Cloudflare proxies, and disaster recovery</li>
+                        <li>Built Aptify.Core.API abstraction layer providing REST access to AMS and conference systems</li>
+                        <li>Managed vendor relationships with Higher Logic, Real Magnet, InReach, Community Brands, and conference providers</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Application Development Manager</div>
+                        <div class="company">American Association of Nurse Practitioners</div>
+                        <div class="dates">Austin, TX | 2012–2023</div>
+                    </div>
+                    <div class="job-description">
+                        Led technical transition from legacy systems to Aptify AMS during rapid organizational growth (35,000 to 120,000 members).
+                    </div>
+                    <ul>
+                        <li>Built first in-house development team from scratch; hired and mentored developers and project managers</li>
+                        <li>Managed Aptify configuration, custom objects, finance/GL integrations, and third-party connections</li>
+                        <li>Developed custom applications for member portal, payments, and conference registration using .NET MVC, React, and SQL Server</li>
+                        <li>Established development standards, code review practices, source control workflows, and release processes</li>
+                        <li>Collaborated with VP of Technology on annual budget planning and technical roadmap</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Web Developer / Information Architect</div>
+                        <div class="company">ECOM PPO Advisors</div>
+                        <div class="dates">Dallas, TX | 2005–2012</div>
+                    </div>
+                    <div class="job-description">
+                        Maintained and modernized enterprise web applications for healthcare PPO network. Converted legacy platforms (Classic ASP, Perl) to .NET. Mentored developers and designed database structures.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
