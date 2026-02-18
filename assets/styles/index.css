@@ -106,13 +106,7 @@
 
 .hero .contact-row a i { color: var(--color-accent); }
 
-/* ========== HERO ENTRANCE ========== */
-@keyframes hero-fade-up {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.hero-entrance { animation: hero-fade-up 0.6s ease-out both; }
+/* ========== HERO ENTRANCE (disabled) ========== */
 
 /* ========== SECTIONS ========== */
 section {
@@ -376,24 +370,7 @@ footer {
   text-decoration: none;
 }
 
-/* ========== SCROLL ANIMATIONS ========== */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
-.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
-.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
-.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
-.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
-.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
+/* ========== SCROLL ANIMATIONS (disabled) ========== */
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 600px) {
