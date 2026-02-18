@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+  <title>Resume - Jeff Sikes</title>
+  <meta name="description" content="Resume of Jeff Sikes - Technology Leader with 13+ years building dev teams and modernizing platforms at mission-driven nonprofits.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Resume - Jeff Sikes">
+  <meta property="og:description" content="Technology Leader with 13+ years building dev teams and modernizing platforms at mission-driven nonprofits.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://jeffsikes.com/resume.html">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leader and Builder of Teams">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Resume - Jeff Sikes">
+  <meta name="twitter:description" content="Technology Leader with 13+ years building dev teams and modernizing platforms at mission-driven nonprofits.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/resume.html">
+
+  <link rel="alternate" type="application/json" href="resume.json" title="JSON Resume">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/print.css" media="print">
+
+  <style>
+    /* Resume-specific layout */
+    .resume-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Top nav */
+    .resume-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+
+    .resume-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .resume-nav a.back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: var(--color-accent-bg);
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .resume-nav a.back-btn:hover {
+      background-color: var(--color-accent);
+      color: var(--color-card-bg);
+    }
+
+    .resume-nav a.back-btn:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    .resume-nav span {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .resume-nav .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5em 1em;
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .resume-nav .download-btn:hover {
+      background: var(--color-accent-soft);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .resume-nav .download-btn:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    .resume-header h1 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .resume-header .label {
+      font-size: 1.1rem;
+      color: var(--color-link);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .resume-header .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .resume-header .contact-info a {
+      color: var(--color-text-muted);
+      text-decoration: none;
+    }
+
+    .resume-header .contact-info a:hover {
+      color: var(--color-accent);
+    }
+
+    .resume-header .contact-info i {
+      color: var(--color-accent);
+      margin-right: 0.25rem;
+    }
+
+    /* Summary */
+    .resume-summary {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-text-muted);
+      margin-bottom: 2.5rem;
+      text-align: center;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Section headers */
+    .resume-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .resume-section-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--color-text);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--color-card-border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .resume-section-title i {
+      color: var(--color-accent);
+      font-size: 0.85em;
+    }
+
+    /* Work entries */
+    .work-entry {
+      margin-bottom: 1.75rem;
+    }
+
+    .work-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .work-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--color-text);
+    }
+
+    .work-dates {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+
+    .work-company {
+      font-size: 0.9rem;
+      color: var(--color-accent);
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .work-location {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .work-summary {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .work-highlights {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .work-highlights li {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      padding-left: 1rem;
+      position: relative;
+      margin-bottom: 0.3rem;
+      list-style: none !important;
+    }
+
+    .work-highlights li::marker {
+      content: none;
+    }
+
+    .work-highlights li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-weight: bold;
+    }
+
+    /* Education */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .edu-left .edu-degree {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--color-text);
+    }
+
+    .edu-left .edu-school {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+    }
+
+    .edu-right {
+      text-align: right;
+    }
+
+    .edu-right .edu-dates {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    .edu-right .edu-score {
+      font-size: 0.82rem;
+      color: var(--color-accent);
+      font-weight: 500;
+    }
+
+    /* Certs */
+    .cert-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+
+    .cert-name {
+      font-size: 0.9rem;
+      color: var(--color-text);
+    }
+
+    .cert-issuer {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Skills */
+    .skills-group {
+      margin-bottom: 1rem;
+    }
+
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-group-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--color-text);
+      margin-bottom: 0.35rem;
+    }
+
+    .skills-list {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* Print-only elements hidden on screen */
+    .print-only {
+      display: none !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .resume-header h1 {
+        font-size: 2rem;
+      }
+
+      .resume-header .contact-info {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      .work-header {
+        flex-direction: column;
+      }
+
+      .edu-entry {
+        flex-direction: column;
+      }
+
+      .edu-right {
+        text-align: left;
+      }
+
+      .resume-nav span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#resume-content" class="skip-link">Skip to content</a>
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon" aria-hidden="true"></i>
+  </button>
+
+  <main class="resume-page" id="resume-content">
+
+    <nav class="resume-nav">
+      <div class="resume-nav-left">
+        <a href="index.html" class="back-btn" aria-label="Back to profile" title="Back to profile">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <span>Jeff Sikes</span>
+      </div>
+      <button class="download-btn" onclick="const t=document.title; document.title='Jeff-Sikes-Resume'; window.print(); document.title=t;" aria-label="Download resume as PDF">
+        <i class="fas fa-download" aria-hidden="true"></i> Download PDF
+      </button>
+    </nav>
+
+    <div id="resume-body">
+      <!-- Populated by JavaScript from resume.json -->
+    </div>
+
+  </main>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('theme-toggle');
+    const icon = toggle.querySelector('i');
+    const html = document.documentElement;
+
+    // Sync icon with current theme (set by early script in <head>)
+    if (html.getAttribute('data-theme') === 'dark') {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      icon.classList.toggle('fa-moon', isDark);
+      icon.classList.toggle('fa-sun', !isDark);
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+
+    // Format date string (YYYY-MM or YYYY) to readable format
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const parts = dateStr.split('-');
+      if (parts.length === 2) {
+        return months[parseInt(parts[1]) - 1] + ' ' + parts[0];
+      }
+      return parts[0];
+    }
+
+    // Build resume HTML from JSON
+    fetch('resume.json')
+      .then(r => r.json())
+      .then(data => {
+        const b = data.basics;
+        let html = '';
+
+        // Header
+        html += `<header class="resume-header">
+          <h1>${b.name}</h1>
+          <div class="label">${b.label}</div>
+          <div class="contact-info">
+            <span><i class="fas fa-location-dot" aria-hidden="true"></i> ${b.location.city}, ${b.location.region}</span>
+            <a href="mailto:${b.email}"><i class="fas fa-envelope" aria-hidden="true"></i> ${b.email}</a>
+            <a href="tel:${b.phone}"><i class="fas fa-phone" aria-hidden="true"></i> ${b.phone}</a>
+            <a href="${b.url}" target="_blank" rel="noopener" class="print-only"><i class="fas fa-globe" aria-hidden="true"></i> ${b.url.replace('https://', '')}</a>
+            ${b.profiles.map(p => `<a href="${p.url}" target="_blank" rel="noopener"><i class="fab fa-${p.network.toLowerCase()}" aria-hidden="true"></i> ${p.username}</a>`).join('')}
+          </div>
+        </header>`;
+
+        // Summary
+        html += `<p class="resume-summary">${b.summary}</p>`;
+
+        // Experience
+        html += `<section class="resume-section">
+          <h2 class="resume-section-title"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience</h2>`;
+
+        for (const job of data.work) {
+          const dates = formatDate(job.startDate) + ' - ' + (job.endDate ? formatDate(job.endDate) : 'Present');
+          html += `<div class="work-entry">
+            <div class="work-entry-header">
+              <div class="work-header">
+                <span class="work-title">${job.position}</span>
+                <span class="work-dates">${dates}</span>
+              </div>
+              <div class="work-company">${job.name}</div>
+              ${job.location ? `<div class="work-location">${job.location}</div>` : ''}
+              ${job.summary ? `<p class="work-summary">${job.summary}</p>` : ''}
+            </div>`;
+
+          if (job.highlights && job.highlights.length) {
+            html += `<ul class="work-highlights">
+              ${job.highlights.map(h => `<li>${h}</li>`).join('')}
+            </ul>`;
+          }
+          html += `</div>`;
+        }
+        html += `</section>`;
+
+        // Education
+        html += `<section class="resume-section">
+          <h2 class="resume-section-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>`;
+
+        for (const edu of data.education) {
+          const dates = edu.startDate && edu.endDate ? edu.startDate + ' - ' + edu.endDate : '';
+          html += `<div class="edu-entry">
+            <div class="edu-left">
+              <div class="edu-degree">${edu.studyType} in ${edu.area}</div>
+              <div class="edu-school">${edu.institution}</div>
+            </div>
+            <div class="edu-right">
+              ${dates ? `<div class="edu-dates">${dates}</div>` : ''}
+              ${edu.score ? `<div class="edu-score">${edu.score}</div>` : ''}
+            </div>
+          </div>`;
+        }
+        html += `</section>`;
+
+        // Certifications
+        if (data.certificates && data.certificates.length) {
+          html += `<section class="resume-section">
+            <h2 class="resume-section-title"><i class="fas fa-certificate" aria-hidden="true"></i> Certifications</h2>`;
+
+          for (const cert of data.certificates) {
+            html += `<div class="cert-entry">
+              <span class="cert-name">${cert.name}</span>
+              <span class="cert-issuer">${cert.issuer}</span>
+            </div>`;
+          }
+          html += `</section>`;
+        }
+
+        // Skills
+        html += `<section class="resume-section">
+          <h2 class="resume-section-title"><i class="fas fa-toolbox" aria-hidden="true"></i> Skills</h2>`;
+
+        for (const group of data.skills) {
+          html += `<div class="skills-group">
+            <div class="skills-group-name">${group.name}</div>
+            <div class="skills-list">${group.keywords.join(' · ')}</div>
+          </div>`;
+        }
+        html += `</section>`;
+
+        document.getElementById('resume-body').innerHTML = html;
+      });
+  </script>
+
+  <!-- GoatCounter analytics -->
+  <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* Print stylesheet for resume */
+
+/* Hide UI elements */
+.resume-nav,
+.theme-toggle,
+.skip-link,
+.download-btn {
+  display: none !important;
+}
+
+/* Base print resets */
+*,
+*::before,
+*::after {
+  background: white !important;
+  color: #222 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html, body {
+  font-size: 10pt;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove Pico container constraints */
+.resume-page {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+/* Header - compact */
+.resume-header {
+  margin-bottom: 0.75rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid #222 !important;
+}
+
+.resume-header h1 {
+  font-size: 18pt !important;
+  margin-bottom: 0 !important;
+}
+
+.resume-header .label {
+  font-size: 10.5pt !important;
+  color: #444 !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.resume-header .contact-info {
+  font-size: 8pt !important;
+  gap: 0.5rem !important;
+}
+
+.resume-header .contact-info i {
+  color: #222 !important;
+}
+
+/* Summary - tighter */
+.resume-summary {
+  font-size: 9pt !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0.75rem !important;
+  text-align: center !important;
+  color: #333 !important;
+}
+
+/* Section titles - keep with next content */
+.resume-section {
+  margin-bottom: 0.75rem !important;
+}
+
+.resume-section-title {
+  font-size: 11pt !important;
+  margin-bottom: 0.4rem !important;
+  padding-bottom: 0.2rem !important;
+  border-bottom: 1px solid #999 !important;
+  break-after: avoid !important;
+}
+
+/* Work entries - let them break naturally across pages,
+   but keep the header/company/summary together */
+.work-entry {
+  margin-bottom: 0.6rem !important;
+}
+
+.work-entry:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Wrapper keeps title + company + location + summary together */
+.work-entry-header {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.work-header {
+  margin-bottom: 0 !important;
+}
+
+.work-title {
+  font-size: 10pt !important;
+}
+
+.work-dates {
+  font-size: 8pt !important;
+}
+
+.work-company {
+  font-size: 8.5pt !important;
+  color: #555 !important;
+  margin-bottom: 0 !important;
+}
+
+.work-location {
+  font-size: 7.5pt !important;
+  margin-bottom: 0.15rem !important;
+}
+
+.work-summary {
+  font-size: 8.5pt !important;
+  margin-bottom: 0.15rem !important;
+  line-height: 1.35 !important;
+}
+
+/* Bullets - can break across pages, but not mid-bullet */
+.work-highlights li {
+  font-size: 8.5pt !important;
+  line-height: 1.35 !important;
+  margin-bottom: 0.1rem !important;
+  break-inside: avoid !important;
+}
+
+.work-highlights li::before {
+  color: #222 !important;
+}
+
+/* Education - keep each entry together */
+.edu-entry {
+  margin-bottom: 0.3rem !important;
+  break-inside: avoid !important;
+}
+
+.edu-left .edu-degree {
+  font-size: 9.5pt !important;
+}
+
+.edu-left .edu-school {
+  font-size: 8.5pt !important;
+}
+
+.edu-right .edu-dates {
+  font-size: 8pt !important;
+}
+
+.edu-right .edu-score {
+  font-size: 8pt !important;
+  color: #444 !important;
+}
+
+/* Certifications */
+.cert-entry {
+  margin-bottom: 0.15rem !important;
+  break-inside: avoid !important;
+}
+
+.cert-name {
+  font-size: 9pt !important;
+}
+
+.cert-issuer {
+  font-size: 8pt !important;
+}
+
+/* Skills */
+.skills-group {
+  margin-bottom: 0.3rem !important;
+  break-inside: avoid !important;
+}
+
+.skills-group-name {
+  font-size: 9pt !important;
+  margin-bottom: 0.1rem !important;
+}
+
+.skills-list {
+  font-size: 8.5pt !important;
+}
+
+/* Links - no underlines in print */
+a {
+  text-decoration: none !important;
+}
+
+/* Show print-only elements */
+.print-only,
+.resume-header .contact-info .print-only {
+  display: inline !important;
+  visibility: visible !important;
+}

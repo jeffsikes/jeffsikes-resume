@@ -1,0 +1,135 @@
+/* ========== BASE / SHARED STYLES ========== */
+
+@view-transition {
+  navigation: auto;
+}
+
+:root {
+  --color-bg: #faf8f5;
+  --color-bg-alt: #f0ece6;
+  --color-text: #2d2926;
+  --color-text-muted: #6b6560;
+  --color-accent: #c2703e;
+  --color-accent-soft: #e8a878;
+  --color-accent-bg: #fdf0e6;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e8e2db;
+  --color-link: #9e5a30;
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Override Pico defaults */
+  --pico-background-color: var(--color-bg);
+  --pico-color: var(--color-text);
+  --pico-primary: var(--color-accent);
+  --pico-primary-focus: var(--color-accent-soft);
+  --pico-muted-color: var(--color-text-muted);
+  --pico-card-background-color: var(--color-card-bg);
+  --pico-card-border-color: var(--color-card-border);
+  --pico-font-family: var(--font-body);
+  --pico-font-size: 93.75%;
+  --pico-line-height: 1.6;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1c1a18;
+  --color-bg-alt: #262320;
+  --color-text: #f2ede8;
+  --color-text-muted: #c4bbb2;
+  --color-accent: #f0b888;
+  --color-accent-soft: #d4915a;
+  --color-accent-bg: #2e2218;
+  --color-card-bg: #2a2724;
+  --color-card-border: #443d35;
+  --color-link: #f0b888;
+
+  --pico-background-color: var(--color-bg);
+  --pico-color: var(--color-text);
+  --pico-primary: var(--color-accent);
+  --pico-primary-focus: var(--color-accent-soft);
+  --pico-muted-color: var(--color-text-muted);
+  --pico-card-background-color: var(--color-card-bg);
+  --pico-card-border-color: var(--color-card-border);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+}
+
+a { color: var(--color-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+article {
+  border-color: var(--color-card-border);
+  background-color: var(--color-card-bg);
+}
+
+hr {
+  border-color: var(--color-card-border);
+  margin: 0;
+}
+
+/* ========== DARK MODE TOGGLE ========== */
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+  font-size: 1.1rem;
+  color: var(--color-accent);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ========== SKIP TO CONTENT ========== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.75em 1.25em;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

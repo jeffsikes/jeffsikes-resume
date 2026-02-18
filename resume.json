@@ -1,0 +1,224 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jeff Sikes",
+    "label": "Director of Application Development",
+    "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg",
+    "email": "jeff@box464.com",
+    "phone": "214-914-3228",
+    "url": "https://jeffsikes.com",
+    "summary": "Technology leader with 13+ years building and scaling engineering teams in mission-driven nonprofit organizations. Proven track record managing cross-functional technical operations, platform modernizations, and vendor relationships while balancing limited resources with organizational impact.",
+    "location": {
+      "city": "Austin",
+      "region": "TX",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jsikes",
+        "url": "https://linkedin.com/in/jsikes"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "BOX464 Holdings, LLC",
+      "position": "Technology Consultant",
+      "startDate": "2025-10",
+      "endDate": "2026-01",
+      "location": "Austin, TX (Remote)",
+      "summary": "Contracted with AANP to lead a comprehensive knowledge transfer following departure from Director role.",
+      "highlights": [
+        "Created training videos and technical documentation covering all internal systems and processes",
+        "Built a Cloudflare AutoRAG MCP server containing institutional knowledge with a chat interface for staff to query"
+      ]
+    },
+    {
+      "name": "American Association of Nurse Practitioners",
+      "position": "Director of Application Development",
+      "url": "https://www.aanp.org",
+      "startDate": "2023-04",
+      "endDate": "2025-10",
+      "location": "Austin, TX (Remote)",
+      "summary": "Led cross-functional team of 7 staff (3 developers, 2 project managers, 1 data analyst, 1 business analyst) supporting 460,000 nurse practitioners through member services, education, conferences, and political advocacy.",
+      "highlights": [
+        "Led enterprise Salesforce implementation (Unlimited Edition) - Sales, Service, Marketing, Commerce, Experience, and Data Cloud - replacing legacy Aptify AMS",
+        "Managed data migration from Aptify to Salesforce using CData DBAmp - 600,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout",
+        "Configured Chargent to work with Commerce Cloud for managing membership renewals, auto-renewals, promotions, and coupon structures",
+        "Implemented SSO integrations between Experience Cloud and multiple third-party vendors via SAML Connected Apps",
+        "Served as acting VP of IT for six months, overseeing application development and infrastructure teams (9 total staff)",
+        "Implemented Zendesk across departments, reducing support call volume through knowledge base; system ownership successfully transitioned to non-IT staff",
+        "Modernized infrastructure over 12 years - from on-premise server room to Rackspace, then Aptify Cloud, then Azure - implementing load balancing, Cloudflare proxies, and page rules for performance and security",
+        "Designed and co-developed a REST API abstraction layer allowing the organization to swap third-party vendors (conference reg, LMS, etc.) without impacting any websites or member-facing systems",
+        "Managed vendor relationships with Higher Logic, Real Magnet, InReach, Community Brands, MuleSoft, and conference providers"
+      ]
+    },
+    {
+      "name": "American Association of Nurse Practitioners",
+      "position": "Application Development Manager",
+      "url": "https://www.aanp.org",
+      "startDate": "2017-01",
+      "endDate": "2023-04",
+      "location": "Austin, TX",
+      "summary": "Led technical transition from legacy systems to Aptify AMS during rapid organizational growth (35,000 to 120,000 members).",
+      "highlights": [
+        "Built first in-house development team from scratch; hired and mentored developers and project managers",
+        "Managed Aptify configuration, custom objects, finance/GL integrations, and third-party connections",
+        "Developed custom applications for member portal, payments, and conference registration using .NET MVC, React, and SQL Server",
+        "Created integrations with registration and exhibitor systems for conference check-in and exhibitor scanning",
+        "Implemented international membership expansion with country-based pricing in Aptify",
+        "Established development standards, code review practices, source control workflows, and release processes",
+        "Collaborated with VP of Technology on annual budget planning and technical roadmap"
+      ]
+    },
+    {
+      "name": "American Association of Nurse Practitioners",
+      "position": "IT Developer",
+      "url": "https://www.aanp.org",
+      "startDate": "2012-08",
+      "endDate": "2017-01",
+      "location": "Austin, TX",
+      "summary": "Database Administrator, Cloud Systems Administrator, Web Application Developer, and Technical Lead for technology integration projects. Managed and distributed workloads for internal, third-party, and contract development teams."
+    },
+    {
+      "name": "iHealth Technologies (ECOM PPO Advisors, LLC)",
+      "position": "Web Developer / Information Architect",
+      "startDate": "2005-06",
+      "endDate": "2012-07",
+      "location": "Dallas-Fort Worth, TX (Remote)",
+      "summary": "Design and maintenance of all web applications, reporting and analysis for both web applications and claim data, mentoring of new and existing developers. Transitioned to 100% telecommute for the final 3 years."
+    },
+    {
+      "name": "Innovative Risk Management",
+      "position": "Web Team Lead",
+      "startDate": "2005",
+      "endDate": "2005",
+      "summary": "Maintained and enhanced web applications, converted Access database tools to SQL/web applications, created and managed development and testing environments and associated codebases."
+    },
+    {
+      "name": "Argo Data Resource Corp.",
+      "position": "User Interface Design Specialist",
+      "startDate": "2003-04",
+      "endDate": "2005-06",
+      "summary": "Reviewed and updated user interfaces for web-based applications. Created UI design guidelines for developers. Built sales demonstrations with Robodemo (Captivate). Reviewed and analyzed Learning Management Systems."
+    },
+    {
+      "name": "Healthaxis",
+      "position": "Programmer Analyst",
+      "startDate": "2000",
+      "endDate": "2003",
+      "summary": "Developed and maintained two prominent web applications, trained current and new developers, acted as technical lead for projects. Created a developer toolkit that greatly reduced new development completion times."
+    },
+    {
+      "name": "Larson Multimedia",
+      "position": "Technology Manager",
+      "startDate": "1998",
+      "endDate": "2000",
+      "summary": "Client contact for all internet projects, managed contractors, developed and managed quality assurance tools, managed production teams for all internet projects. Produced prototypes and developed web applications."
+    },
+    {
+      "name": "Zane Interactive Publishing",
+      "position": "Multimedia Design Specialist",
+      "startDate": "1997",
+      "endDate": "1999",
+      "summary": "Processed source data for use in multimedia projects using Photoshop and video editing tools. Created standardized workflows and templates to increase developer efficiency. Produced over 300 educational CD-ROM titles."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of North Texas",
+      "area": "Computer Education & Cognitive Systems",
+      "studyType": "Master of Science",
+      "startDate": "1996",
+      "endDate": "1999",
+      "score": "Top 10% of Program"
+    },
+    {
+      "institution": "Lyon College",
+      "area": "Psychology",
+      "studyType": "Bachelor of Arts",
+      "startDate": "1990",
+      "endDate": "1994",
+      "score": "Cum Laude"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Salesforce Certified AI Associate",
+      "issuer": "Salesforce"
+    },
+    {
+      "name": "Microsoft Certified Solutions Developer (MCSD)",
+      "issuer": "Microsoft"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Team Building & Mentoring",
+        "Cross-functional Collaboration",
+        "Vendor Management",
+        "Budget Planning",
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": [
+        "Cloud Migration",
+        "Load Balancing",
+        "Cloudflare",
+        "Database Administration",
+        "Disaster Recovery",
+        "ProxMox",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "keywords": [
+        "Sales Cloud",
+        "Service Cloud",
+        "Marketing Cloud",
+        "Commerce Cloud",
+        "Experience Cloud",
+        "Data Cloud",
+        "Flow Automation",
+        "SAML SSO",
+        "CData DBAmp",
+        "Chargent",
+        "MuleSoft"
+      ]
+    },
+    {
+      "name": "Platforms & Systems",
+      "keywords": [
+        "API & Systems Integration",
+        "Aptify AMS",
+        "Higher Logic",
+        "CraftCMS",
+        "Microsoft/.NET Ecosystem",
+        "SQL Server"
+      ]
+    },
+    {
+      "name": "Currently Exploring",
+      "keywords": [
+        "Python",
+        "SwiftUI",
+        "Vue.js",
+        "Eleventy",
+        "SQLite",
+        "CSS",
+        "Salesforce Administrator Certification"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://jeffsikes.com/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-02-17"
+  }
+}

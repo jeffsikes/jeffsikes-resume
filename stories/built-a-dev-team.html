@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script>
+      (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <meta name="description" content="How Jeff Sikes built an in-house development team from scratch at a national nonprofit.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Built a Dev Team from Scratch | Jeff Sikes">
+  <meta property="og:description" content="How Jeff Sikes built an in-house development team from scratch at a national nonprofit.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jeffsikes.com/stories/built-a-dev-team.html">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leader and Builder of Teams">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Built a Dev Team from Scratch | Jeff Sikes">
+  <meta name="twitter:description" content="How Jeff Sikes built an in-house development team from scratch at a national nonprofit.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/stories/built-a-dev-team.html">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Built a Dev Team from Scratch",
+    "description": "How Jeff Sikes built an in-house development team from scratch at a national nonprofit.",
+    "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jeff Sikes"
+    },
+    "mainEntityOfPage": "https://jeffsikes.com/stories/built-a-dev-team.html",
+    "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg"
+  }
+  </script>
+    <title>Built a Dev Team from Scratch | Jeff Sikes Resume</title>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/story.css">
+
+</head>
+<body>
+    <a href="#story-content" class="skip-link">Skip to content</a>
+    <main id="story-content">
+        <!-- Top Navigation -->
+        <nav class="story-nav">
+            <a href="../index.html" title="Back to profile" aria-label="Back to profile">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <span>Jeff Sikes</span>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="story-hero">
+            <div class="story-hero-bg"></div>
+            <i class="fas fa-users story-icon" aria-hidden="true" style="view-transition-name: icon-team;"></i>
+            <h1 class="story-title">Built a Dev Team from Scratch</h1>
+        </section>
+
+        <!-- Story Body -->
+        <article class="story-body">
+            <p>When I joined AANP, there was no in-house development team. It was just me and a few vendor contracts. Over time, I built the team from zero - hiring developers, project managers, and a data analyst. I'm proud to say the majority of my team stayed with me for the long term.</p>
+
+            <p>Seven people who worked together to support 460,000 nurse practitioners using our systems daily (and nightly!) for education, advocacy and networking.</p>
+
+            <p>Building a team isn't just about hiring. It's about establishing best practices, creating a safe and inclusive environment, and offering opportunities to learn and grow. Building a culture where people want to do good work, and maybe have a bit of fun. That's the part I'm proudest of.</p>
+        </article>
+
+        <!-- Testimonial (hidden until real testimonial from Matt is received) -->
+        <!--
+        <div class="testimonial">
+            <div class="quote-text"></div>
+            <div class="quote-attribution"></div>
+        </div>
+        -->
+
+        <!-- Tech Tags -->
+        <div class="tech-tags">
+            <span class="tech-tag">Team Leadership</span>
+            <span class="tech-tag">Mentoring</span>
+            <span class="tech-tag">Hiring</span>
+            <span class="tech-tag">Code Review</span>
+            <span class="tech-tag">Agile</span>
+        </div>
+
+        <!-- Back Link -->
+        <a href="../index.html" class="back-link">Back to profile</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="mailto:jeff@box464.com">jeff@box464.com</a> ·
+                <a href="https://jeffsikes.com" target="_blank" rel="noopener">jeffsikes.com</a> ·
+                <a href="https://linkedin.com/in/jsikes" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Sync icon with current theme (set by early script in <head>)
+        if (html.getAttribute('data-theme') === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') || 'light';
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun" aria-hidden="true"></i>' : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        });
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
