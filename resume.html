@@ -451,7 +451,6 @@
           <div class="contact-info">
             <span><i class="fas fa-location-dot" aria-hidden="true"></i> ${b.location.city}, ${b.location.region}</span>
             <a href="mailto:${b.email}"><i class="fas fa-envelope" aria-hidden="true"></i> ${b.email}</a>
-            <a href="tel:${b.phone}"><i class="fas fa-phone" aria-hidden="true"></i> ${b.phone}</a>
             <a href="${b.url}" target="_blank" rel="noopener" class="print-only"><i class="fas fa-globe" aria-hidden="true"></i> ${b.url.replace('https://', '')}</a>
             ${b.profiles.map(p => `<a href="${p.url}" target="_blank" rel="noopener"><i class="fab fa-${p.network.toLowerCase()}" aria-hidden="true"></i> ${p.username}</a>`).join('')}
           </div>
