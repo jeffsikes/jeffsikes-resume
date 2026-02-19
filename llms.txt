@@ -62,7 +62,7 @@ After departing his Director role at AANP in late 2025, Jeff signed a 3-month co
 
 ## Technical Skills
 
-Leadership: Team Building & Mentoring, Cross-functional Collaboration, Vendor Management, Budget Planning, Agile Methodologies
+Leadership: Team Building & Mentoring, Cross-functional Collaboration, Vendor Management, Budget Planning
 
 Infrastructure: Cloud Migration, Load Balancing, Cloudflare, Database Administration, Disaster Recovery, ProxMox, Docker
 
