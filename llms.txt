@@ -25,7 +25,7 @@ Jeff has spent 13+ years building and scaling engineering teams in mission-drive
 
 He worked his way up through developer, team lead, manager, and director roles. His career spans healthcare tech, insurance, multimedia publishing, and nonprofit association management.
 
-Jeff built his first in-house development team from scratch at AANP, hiring and mentoring developers and project managers. He served as acting VP of IT for six months, overseeing both application development and infrastructure teams (9 staff total). He led a two-year enterprise Salesforce implementation (Unlimited Edition) and managed the migration of 600,000+ contacts and nearly one million orders from Aptify to Salesforce.
+Jeff built his first in-house development team from scratch at AANP, hiring and mentoring developers and project managers. He served as acting VP of IT for six months, overseeing both application development and infrastructure teams (9 staff total). He led a two-year enterprise Salesforce implementation (Unlimited Edition) and managed the migration of 400,000+ contacts and nearly one million orders from Aptify to Salesforce.
 
 After departing his Director role at AANP in late 2025, Jeff signed a 3-month contract with the organization to complete a thorough knowledge transfer. This included creating training videos, writing documentation, and building a Cloudflare AutoRAG MCP server containing institutional knowledge along with a chat interface for staff to query it. He is currently exploring new opportunities.
 
@@ -38,7 +38,7 @@ After departing his Director role at AANP in late 2025, Jeff signed a 3-month co
 
 ## Career History
 
-- Technology Consultant, BOX464 Holdings, LLC (Oct 2025 - Jan 2026) - Contract with AANP for knowledge transfer
+- Technology Consultant, BOX464 Holdings, LLC (Nov 2025 - Jan 2026) - Contract with AANP for knowledge transfer
 - Director of Application Development, AANP (2023-2025)
 - Application Development Manager, AANP (2017-2023)
 - IT Developer, AANP (2012-2017)
@@ -51,6 +51,7 @@ After departing his Director role at AANP in late 2025, Jeff signed a 3-month co
 
 ## Education
 
+- Leadership Program, Texas Society of Association Executives (TSAE)
 - MS in Computer Education & Cognitive Systems, University of North Texas (1996-1999, Top 10% of Program)
 - BA in Psychology, Lyon College (1990-1994, Cum Laude)
 
@@ -73,11 +74,11 @@ Currently Exploring: Python, SwiftUI, Vue.js, Eleventy, SQLite, CSS
 
 ## Key Accomplishments
 
-- Led enterprise Salesforce implementation (Unlimited Edition) replacing legacy Aptify AMS - Sales, Service, Marketing, Commerce, Experience, and Data Cloud across a 460,000-member nonprofit
-- Managed data migration from Aptify to Salesforce using CData DBAmp - 600,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout
+- Led enterprise Salesforce implementation (Unlimited Edition) replacing legacy Aptify AMS - Sales, Service, Marketing, Commerce, Experience, and Data Cloud across a 120,000-member nonprofit
+- Managed data migration from Aptify to Salesforce using CData DBAmp - 400,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout
 - Configured Chargent to work with Commerce Cloud for managing membership renewals, auto-renewals, promotions, and coupon structures
 - Implemented SSO integrations between Experience Cloud and multiple third-party vendors via SAML Connected Apps
-- Built a development team from zero at a national nonprofit, growing it to 7 staff supporting 460,000 nurse practitioners
+- Built a development team from zero at a national nonprofit, growing it to 7 staff supporting 120,000 nurse practitioners
 - Led earlier migration from legacy systems to Aptify AMS during 3x membership growth
 - Modernized infrastructure from physical servers to cloud with load balancing, Cloudflare proxies, and disaster recovery
 - Designed and co-developed a REST API abstraction layer allowing the organization to swap third-party vendors without impacting websites or member-facing systems
@@ -91,7 +92,7 @@ This was a multi-year effort and where the majority of Jeff's time was spent fro
 
 Technical approach: CData DBAmp linked servers with SQL stored procedures running on SQL Server. Approximately 557 field mappings organized by object group. The migration covered Person Accounts, Business Accounts, Orders, OrderItems, Chargent payment objects, committees, accreditations, partnerships, memberships, subscriptions, and practice sites. Pre-processing temp tables had to be current before migration runs. Scripts ran on the server directly (not over VPN).
 
-Scale: 600,000+ contacts, nearly one million orders, plus all custom object data. Referential integrity had to be maintained throughout. Jeff managed the entire mapping, wrote the SQL stored procedures, coordinated with the Salesforce implementation partner, and validated data quality with the data stewardship team.
+Scale: 400,000+ contacts, nearly one million orders, plus all custom object data. Referential integrity had to be maintained throughout. Jeff managed the entire mapping, wrote the SQL stored procedures, coordinated with the Salesforce implementation partner, and validated data quality with the data stewardship team.
 
 ### Aptify Duplicate Record Merge Automation
 Jeff designed an automated system to replace the manual merge wizard in Aptify. Staff had been merging duplicate person records one at a time through a web-based UI. Jeff's system generated JSON files that mimicked the merge wizard's structure and submitted them into a queue for batch processing.

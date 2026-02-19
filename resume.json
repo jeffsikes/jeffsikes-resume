@@ -6,7 +6,7 @@
     "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg",
     "email": "hire.jeff@box464.com",
     "url": "https://jeffsikes.com",
-    "summary": "Technology leader with 13+ years building and scaling engineering teams in mission-driven nonprofit organizations. Proven track record managing cross-functional technical operations, platform modernizations, and vendor relationships while balancing limited resources with organizational impact.",
+    "summary": "Technology leader with 13+ years building and scaling engineering teams in mission-driven nonprofit organizations. Proven track record managing cross-functional technical operations, platform modernizations, and vendor relationships while balancing limited resources with organizational impact. Graduate of the Texas Society of Association Executives (TSAE) Leadership Program.",
     "location": {
       "city": "Austin",
       "region": "TX",
@@ -24,7 +24,7 @@
     {
       "name": "BOX464 Holdings, LLC",
       "position": "Technology Consultant",
-      "startDate": "2025-10",
+      "startDate": "2025-11",
       "endDate": "2026-01",
       "location": "Austin, TX (Remote)",
       "summary": "Contracted with AANP to lead a comprehensive knowledge transfer following departure from Director role.",
@@ -38,12 +38,12 @@
       "position": "Director of Application Development",
       "url": "https://www.aanp.org",
       "startDate": "2023-04",
-      "endDate": "2025-10",
+      "endDate": "2025-11",
       "location": "Austin, TX (Remote)",
-      "summary": "Led cross-functional team of 7 staff (3 developers, 2 project managers, 1 data analyst, 1 business analyst) supporting 460,000 nurse practitioners through member services, education, conferences, and political advocacy.",
+      "summary": "Led cross-functional team of 7 staff (3 developers, 2 project managers, 1 data analyst, 1 business analyst) supporting 120,000 nurse practitioners through member services, education, conferences, and political advocacy.",
       "highlights": [
         "Led enterprise Salesforce implementation (Unlimited Edition) - Sales, Service, Marketing, Commerce, Experience, and Data Cloud - replacing legacy Aptify AMS",
-        "Managed data migration from Aptify to Salesforce using CData DBAmp - 600,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout",
+        "Managed data migration from Aptify to Salesforce using CData DBAmp - 400,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout",
         "Configured Chargent to work with Commerce Cloud for managing membership renewals, auto-renewals, promotions, and coupon structures",
         "Implemented SSO integrations between Experience Cloud and multiple third-party vendors via SAML Connected Apps",
         "Served as acting VP of IT for six months, overseeing application development and infrastructure teams (9 total staff)",
@@ -125,6 +125,11 @@
     }
   ],
   "education": [
+    {
+      "institution": "Texas Society of Association Executives (TSAE)",
+      "area": "Association Leadership",
+      "studyType": "Leadership Program"
+    },
     {
       "institution": "University of North Texas",
       "area": "Computer Education & Cognitive Systems",
