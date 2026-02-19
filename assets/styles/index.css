@@ -191,7 +191,6 @@ section {
 /* View Transition names for icon morph */
 #card-team .card-icon { view-transition-name: icon-team; }
 #card-scale .card-icon { view-transition-name: icon-scale; }
-#card-cloud .card-icon { view-transition-name: icon-cloud; }
 #card-vp .card-icon { view-transition-name: icon-vp; }
 #card-api .card-icon { view-transition-name: icon-api; }
 #card-zendesk .card-icon { view-transition-name: icon-zendesk; }
