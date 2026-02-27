@@ -135,6 +135,14 @@ After departing as Director, Jeff signed a 3-month contract to complete a thorou
 
 "Jeff was one of the best developers in the company." - Andrei Fiadkovich, CTO at CAE (former teammate)
 
+## Structured Data
+
+This site includes machine-readable data in multiple formats:
+
+- [Resume (JSON Resume schema)](https://jeffsikes.com/resume.json): Full career data following the JSON Resume v1.0.0 standard
+- The homepage (index.html) uses microformats: h-card for contact info, h-resume wrapping career content, p-skill for skills, and p-education/h-event for education
+- Schema.org JSON-LD is embedded in index.html for search engine structured data
+
 ## Site Structure
 
 - Homepage: https://jeffsikes.com/index.html
