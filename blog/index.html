@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="llms" href="../llms.txt" type="text/plain">
+    <script>
+      (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <meta name="description" content="Blog posts by Jeff Sikes on technology leadership, Salesforce, and nonprofit tech strategy.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Blog | Jeff Sikes">
+  <meta property="og:description" content="Blog posts by Jeff Sikes on technology leadership, Salesforce, and nonprofit tech strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeffsikes.com/blog/">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leadership for Non-Profits">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog | Jeff Sikes">
+  <meta name="twitter:description" content="Blog posts by Jeff Sikes on technology leadership, Salesforce, and nonprofit tech strategy.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/blog/">
+
+  <!-- Schema.org Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Jeff Sikes Blog",
+    "description": "Writing about technology leadership, Salesforce, and nonprofit tech strategy.",
+    "url": "https://jeffsikes.com/blog/",
+    "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Salesforce Marketing Cloud in 2026: What Associations Need to Know",
+        "datePublished": "2026-03-04",
+        "url": "https://jeffsikes.com/blog/salesforce-marketing-cloud-2026.html",
+        "description": "A practical guide to navigating Salesforce's marketing product landscape in 2026."
+      }
+    ]
+  }
+  </script>
+    <title>Blog | Jeff Sikes</title>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/blog.css">
+
+</head>
+<body>
+    <a href="#blog-listing" class="skip-link">Skip to content</a>
+    <main id="blog-listing">
+        <!-- Top Navigation -->
+        <nav class="blog-nav">
+            <a href="../index.html" title="Back to profile" aria-label="Back to profile" class="back-btn">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <span><a href="../index.html">Jeff Sikes</a></span>
+        </nav>
+
+        <!-- Listing Header -->
+        <div class="blog-listing-intro h-feed">
+            <h1 class="p-name">Blog</h1>
+            <p class="p-summary">Writing about technology leadership, Salesforce, and nonprofit tech strategy.</p>
+
+            <!-- Post List -->
+            <ul class="blog-list">
+                <li class="blog-list-item h-entry">
+                    <a href="salesforce-marketing-cloud-2026.html" class="u-url">
+                        <div class="post-date"><time class="dt-published" datetime="2026-03-04">March 4, 2026</time></div>
+                        <div class="post-title p-name">Salesforce Marketing Cloud in 2026: What Associations Need to Know</div>
+                        <div class="post-description p-summary">A practical guide to navigating Salesforce's marketing product landscape in 2026. MCE, MCE+, Agentforce Marketing, Data 360 - what it all means for member organizations.</div>
+                        <div class="post-tags">
+                            <span class="p-category">Salesforce</span>
+                            <span class="p-category">Marketing Cloud</span>
+                            <span class="p-category">Associations</span>
+                            <span class="p-category">Agentforce</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="mailto:hire.jeff@box464.com">hire.jeff@box464.com</a> ·
+                <a href="https://linkedin.com/in/jsikes" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Sync icon with current theme (set by early script in <head>)
+        if (html.getAttribute('data-theme') === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') || 'light';
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun" aria-hidden="true"></i>' : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        });
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
