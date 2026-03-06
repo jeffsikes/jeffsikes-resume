@@ -199,6 +199,16 @@ nav.blog-nav span a:hover {
   font-style: italic;
 }
 
+/* Presentation photos - smaller, not full-width */
+.blog-body figure.blog-photo {
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.blog-body figure.blog-photo img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
 /* ========== DETAILS / SUMMARY ========== */
 .blog-body details {
   margin: 1.5rem 0;
@@ -228,6 +238,47 @@ nav.blog-nav span a:hover {
   font-size: 0.88rem;
 }
 
+/* ========== REFERENCES ========== */
+.blog-body .references {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85rem;
+  --pico-typography-spacing-vertical: 0;
+}
+
+.blog-body .references li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ========== CALLOUTS ========== */
+.blog-body .callout {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-accent-bg);
+  border-radius: 8px;
+  border: 1px solid var(--color-card-border);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.blog-body .callout i {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.blog-body .callout p {
+  margin-bottom: 0;
+  color: var(--color-text);
+  font-size: 0.92rem;
+}
+
 /* ========== AUTHOR BIO ========== */
 .author-bio {
   margin: 2.5rem 0;
@@ -239,67 +290,6 @@ nav.blog-nav span a:hover {
   line-height: 1.7;
   color: var(--color-text-muted);
   font-style: italic;
-}
-
-/* ========== TECH TAGS (post footer) ========== */
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 2.5rem 0;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--color-card-border);
-  border-bottom: 1px solid var(--color-card-border);
-}
-
-.tech-tag {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--color-card-border);
-  border-radius: 999px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--color-text);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.tech-tag:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-}
-
-/* ========== BACK LINK ========== */
-.back-link {
-  display: block;
-  text-align: center;
-  margin: 3rem 0 2rem 0;
-  color: var(--color-link);
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.back-link:hover {
-  text-decoration: underline;
-}
-
-/* ========== FOOTER ========== */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  border-top: 1px solid var(--color-card-border);
-  margin-top: 3rem;
-}
-
-footer a {
-  color: var(--color-link);
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 /* ========== DARK MODE TOGGLE (blog override) ========== */

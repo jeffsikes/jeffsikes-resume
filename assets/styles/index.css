@@ -347,6 +347,7 @@ footer {
   color: var(--color-text-muted);
   font-size: 0.9rem;
   border-top: 1px solid var(--color-card-border);
+  margin-top: 0;
 }
 
 .footer-links {

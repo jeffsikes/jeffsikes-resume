@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="llms" href="../llms.txt" type="text/plain">
+    <link rel="alternate" type="application/atom+xml" title="Jeff Sikes - Blog" href="https://jeffsikes.com/blog/feed.xml">
     <script>
       (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
     </script>
@@ -37,17 +38,28 @@
     "headline": "Salesforce Marketing Cloud in 2026: What Associations Need to Know",
     "description": "A practical guide to navigating Salesforce's marketing product landscape in 2026. MCE, MCE+, Agentforce Marketing, Data 360 - what it all means for member organizations.",
     "datePublished": "2026-03-04",
+    "dateModified": "2026-03-06",
     "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com",
+      "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg"
+    },
+    "publisher": {
       "@type": "Person",
       "name": "Jeff Sikes",
       "url": "https://jeffsikes.com"
     },
-    "publisher": {
-      "@type": "Person",
-      "name": "Jeff Sikes"
-    },
     "mainEntityOfPage": "https://jeffsikes.com/blog/salesforce-marketing-cloud-2026.html",
-    "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://jeffsikes.com/assets/images/blog/salesforce-marketing-convergence.png",
+      "caption": "Salesforce marketing product convergence - from legacy acquisitions to Agentforce Marketing"
+    },
+    "thumbnailUrl": [
+      "https://jeffsikes.com/assets/images/blog/adoption-strategies-slide.png",
+      "https://jeffsikes.com/assets/images/blog/mce-plus-use-cases.png"
+    ],
     "keywords": ["Salesforce", "Marketing Cloud", "Associations", "Agentforce", "Data 360", "MCE"]
   }
   </script>
@@ -113,7 +125,7 @@
             <p>If you've been calling it "Marketing Cloud" this whole time, you're not wrong - but Salesforce now uses that name for about four different things. The diagram below should help sort it out.</p>
 
             <figure>
-                <img src="../assets/images/blog/salesforce-marketing-convergence.png" alt="Diagram showing the convergence of Salesforce marketing products. Legacy acquired products ExactTarget (2013) and Pardot (2012) became MCE and MCAE respectively. Bridge tiers MCE+ and MCAE+ connect to Agentforce Marketing. A separate new platform track shows MC Growth/Advanced leading to Marketing Cloud Next, also flowing into Agentforce Marketing as the unified destination." loading="lazy">
+                <img src="../assets/images/blog/salesforce-marketing-convergence.png" alt="Diagram showing the convergence of Salesforce marketing products. Legacy acquired products ExactTarget (2013) and Pardot (2012) became MCE and MCAE respectively. Bridge tiers MCE+ and MCAE+ connect to Agentforce Marketing. A separate new platform track shows MC Growth/Advanced leading to Marketing Cloud Next, also flowing into Agentforce Marketing as the unified destination." width="1408" height="768" loading="lazy">
                 <figcaption>Salesforce marketing product convergence - from legacy acquisitions to Agentforce Marketing</figcaption>
             </figure>
 
@@ -143,6 +155,11 @@
 
             <p>The <strong>Accelerated path</strong> goes further - full Data 360 setup, re-configuring some sending and consent, rebuilding some content and journeys. But even this path keeps MCE access. A footnote on the presentation slide noted that tooling to help automate the transition from MCE to the new platform is planned for the second half of 2026, though I haven't been able to verify a firm timeline from any public Salesforce source.</p>
 
+            <figure class="blog-photo">
+                <img src="../assets/images/blog/adoption-strategies-slide.png" alt="Presenter at the Austin Salesforce demo showing a slide comparing Incremental and Accelerated adoption strategies for MCE+, with rows for MCE access, Data 360 setup, sending configuration, consent models, content recreation, and scripting." loading="lazy">
+                <figcaption>The Incremental vs. Accelerated adoption paths, presented at the Austin demo</figcaption>
+            </figure>
+
             <h2>Data 360 Is the Price of Admission</h2>
 
             <p>If there's one thing that came through clearly at the meeting, it's this: Data Cloud (renamed to Data 360 at Dreamforce '25 in October 2025) is now the foundation for everything new in Salesforce marketing. Segmentation, Agentforce agents, personalization, unified reporting - all of it runs on Data 360.</p>
@@ -155,7 +172,15 @@
 
             <p>At the Austin meeting, there was also mention of a "Data Cloud Profiles" SKU that would provide flat-rate pricing for access to Data 360 for core contact data. I haven't been able to verify this from any public Salesforce source, so check with your AE if this is relevant to your org.</p>
 
-            <p>Bottom line: you need to budget for Data 360 beyond the free tier. Work with your Salesforce AE to estimate realistic usage based on your contact volume and use cases. The Digital Wallet tool gives visibility into consumption, but nobody wants to learn about overage charges the hard way.</p>
+            <div class="callout">
+                <i class="fas fa-circle-info" aria-hidden="true"></i>
+                <p><strong>Budget note:</strong> You need Data 360 beyond the free tier. Work with your Salesforce AE to estimate realistic usage based on your contact volume and use cases. The Digital Wallet tool gives visibility into consumption, but nobody wants to learn about overage charges the hard way.</p>
+            </div>
+
+            <figure class="blog-photo">
+                <img src="../assets/images/blog/mce-plus-use-cases.png" alt="Salesforce presentation slide showing initial MCE+ use cases split into Explore tasks like Digital Wallet and Campaign Workspace, and Build tasks like Unified Reports, Flow Orchestrations, Segments, and Agentic Decisioning." loading="lazy">
+                <figcaption>MCE+ initial use cases - what you can explore vs. what you can build</figcaption>
+            </figure>
 
             <h2>What Agentforce Marketing Actually Does</h2>
 
@@ -167,7 +192,10 @@
 
             <p>You can set business units and brands (useful for associations that run multiple conferences or programs under different identities) and adjust the communication tone, which affects both messaging and potentially delivery methods.</p>
 
-            <p>It's impressive. But the quality of what the agent produces depends entirely on the data underneath it. If your data is messy (and let's be honest, most association data is at least a little messy), the output will reflect that. Good data hygiene isn't glamorous, but it's still the thing that makes or breaks your marketing.</p>
+            <div class="callout">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                <p>It's impressive. But the quality of what the agent produces depends entirely on the data underneath it. If your data is messy (and let's be honest, most association data is at least a little messy), the output will reflect that. Good data hygiene isn't glamorous, but it's still the thing that makes or breaks your marketing.</p>
+            </div>
 
             <h2>The Admin Concern</h2>
 
@@ -187,7 +215,7 @@
 
             <p><strong>Handlebars Templating.</strong> The new platform now supports Handlebars syntax for email personalization - conditional logic, iteration, helper functions - working with Data 360 data. If your team has ever looked at AMPscript and quietly backed away, Handlebars is a friendlier starting point. This is different from the Handlebars Merge Language (HML) used in Account Engagement.</p>
 
-            <p><strong>Two-Way Conversational Email.</strong> This is powered by Agentforce and it's the one that caught my attention most. Instead of one-way blast emails, recipients can reply and get AI-powered responses. Imagine a member replying to a conference reminder to ask about session times and getting an actual answer. I have a lot of questions about how this works at scale, but the concept is genuinely interesting for member engagement. Production rollout began February 21, 2026.</p>
+            <p><strong>Two-Way Conversational Email.</strong> This is powered by Agentforce and it's the one that caught my attention most. Instead of one-way blast emails, recipients can reply and get AI-powered responses. Imagine a member replying to a conference reminder to ask about session times and getting an actual answer. I have a lot of questions about how this works at scale, but the concept is genuinely interesting for member engagement. Production rollout began February 2026.</p>
 
             <p><strong>Distributed Marketing &amp; Alerts.</strong> This gives non-marketing users (chapter leaders, regional reps, volunteer coordinators) access to approved email templates with component-level locking. Marketing controls the brand and message structure. Field users customize what they're allowed to customize. For anyone who's watched a chapter leader go rogue with a brand template, this is a welcome development. This is a separate add-on license, so budget accordingly.</p>
 
@@ -202,6 +230,18 @@
             <p><strong>If you haven't started on Marketing Cloud at all,</strong> you're actually in a decent position. Talk to your Salesforce team about whether starting on the new platform makes sense for your size and use cases. For smaller associations with straightforward needs, the new native platform might be the right starting point. For larger orgs with complex requirements, MCE+ with a convergence plan is still the safer bet.</p>
 
             <p>Whatever path you choose, get Data 360 in your budget conversation now. It's not optional anymore.</p>
+
+            <h2>References</h2>
+            <ul class="references">
+                <li><a href="https://www.salesforce.com/news/stories/marketing-cloud-next-announcement/" target="_blank" rel="noopener">Salesforce Announces Marketing Cloud Next</a> - Official announcement from Connections '25</li>
+                <li><a href="https://www.salesforce.com/blog/agentforce-marketing-spring-release/" target="_blank" rel="noopener">What You Need to Know about the Agentforce Marketing Spring '26 Release</a> - Salesforce blog on Spring '26 features</li>
+                <li><a href="https://www.salesforce.com/blog/data-cloud-pricing-updates/" target="_blank" rel="noopener">Simpler, More Accessible Pricing for Data Cloud</a> - Official Data 360 pricing changes</li>
+                <li><a href="https://www.salesforceben.com/salesforce-data-cloud-renamed-to-data-360-as-part-of-agentforce-360/" target="_blank" rel="noopener">Salesforce Data Cloud Renamed to 'Data 360'</a> - Salesforce Ben on the Data 360 rebrand</li>
+                <li><a href="https://www.salesforceben.com/salesforce-marketing-cloud-next-vs-mce-mcae-mcg-mca/" target="_blank" rel="noopener">Salesforce Marketing Cloud Next (vs. MCE, MCAE, MCG, MCA)</a> - Salesforce Ben's platform comparison guide</li>
+                <li><a href="https://www.salesforceben.com/top-10-spring-26-updates-for-salesforce-marketers/" target="_blank" rel="noopener">Top 10 Spring '26 Updates for Salesforce Marketers</a> - Salesforce Ben's feature roundup</li>
+                <li><a href="https://www.salesforceben.com/the-state-of-salesforce-nonprofit-offerings-in-2026/" target="_blank" rel="noopener">The State of Salesforce Nonprofit Offerings in 2026</a> - Salesforce Ben on NPSP and Nonprofit Cloud</li>
+                <li><a href="https://www.salesforce.com/news/press-releases/2013/07/12/salesforce-com-completes-acquisition-of-exacttarget/" target="_blank" rel="noopener">Salesforce Completes Acquisition of ExactTarget</a> - Original 2013 acquisition press release</li>
+            </ul>
         </article>
 
         <!-- Author Bio -->

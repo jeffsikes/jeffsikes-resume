@@ -150,6 +150,7 @@ This site includes machine-readable data in multiple formats:
 - Resume (JSON): https://jeffsikes.com/resume.json
 - Blog: https://jeffsikes.com/blog/
 - Blog - Salesforce Marketing Cloud in 2026: https://jeffsikes.com/blog/salesforce-marketing-cloud-2026.html
+- Blog RSS Feed (Atom): https://jeffsikes.com/blog/feed.xml
 - Story - Built a Dev Team: https://jeffsikes.com/stories/built-a-dev-team.html
 - Story - Scaled Systems: https://jeffsikes.com/stories/scaled-systems.html
 - Story - Automated Data Merge: https://jeffsikes.com/stories/automated-data-merge.html

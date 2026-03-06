@@ -115,6 +115,75 @@ hr {
   outline-offset: 2px;
 }
 
+/* ========== SHARED INNER PAGE COMPONENTS ========== */
+
+/* Reset card styling for content articles */
+.blog-body, .story-body {
+  background-color: transparent;
+  border: none;
+}
+
+/* ========== TECH TAGS ========== */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-card-border);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-card-border);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.tech-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ========== BACK LINK ========== */
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ========== INNER PAGE FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-card-border);
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* ========== SKIP TO CONTENT ========== */
 .skip-link {
   position: absolute;
