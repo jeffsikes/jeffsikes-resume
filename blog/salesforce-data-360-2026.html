@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="llms" href="../llms.txt" type="text/plain">
+    <link rel="alternate" type="application/atom+xml" title="Jeff Sikes - Blog" href="https://jeffsikes.com/blog/feed.xml">
+    <script>
+      (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <meta name="description" content="What Data 360 actually costs for associations. Flex Credits vs Profile Pricing, napkin math for mid-size orgs, and why everything new in Salesforce marketing runs on it.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Data 360: The Foundation Under Everything (and What It Costs)">
+  <meta property="og:description" content="What Data 360 actually costs for associations. Flex Credits vs Profile Pricing, napkin math for mid-size orgs, and why it's required.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jeffsikes.com/blog/salesforce-data-360-2026.html">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leadership for Non-Profits">
+  <meta property="article:published_time" content="2026-03-13">
+  <meta property="article:author" content="Jeff Sikes">
+  <meta property="article:tag" content="Salesforce">
+  <meta property="article:tag" content="Data 360">
+  <meta property="article:tag" content="Pricing">
+  <meta property="article:tag" content="Associations">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Data 360: The Foundation Under Everything (and What It Costs)">
+  <meta name="twitter:description" content="What Data 360 actually costs for associations. Flex Credits vs Profile Pricing, napkin math for mid-size orgs, and why it's required.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/blog/salesforce-data-360-2026.html">
+
+  <!-- Schema.org BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Data 360: The Foundation Under Everything (and What It's Going to Cost You)",
+    "description": "What Data 360 actually costs for associations. Flex Credits vs Profile Pricing, napkin math for mid-size orgs, and why everything new in Salesforce marketing runs on it.",
+    "datePublished": "2026-03-13T00:00:00-05:00",
+    "dateModified": "2026-03-13T00:00:00-05:00",
+    "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com",
+      "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com"
+    },
+    "mainEntityOfPage": "https://jeffsikes.com/blog/salesforce-data-360-2026.html",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://jeffsikes.com/assets/images/blog/data-360-dependency-tiers.png",
+      "caption": "Infographic showing four tiers of Salesforce marketing product dependency on Data 360"
+    },
+    "keywords": ["Salesforce", "Data 360", "Pricing", "Associations", "Agentforce", "CDP"]
+  }
+  </script>
+    <title>Data 360: The Foundation Under Everything (and What It's Going to Cost You) | Jeff Sikes</title>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/blog.css">
+
+</head>
+<body>
+    <a href="#blog-content" class="skip-link">Skip to content</a>
+    <main id="blog-content" class="h-entry">
+        <!-- Top Navigation -->
+        <nav class="blog-nav">
+            <a href="../blog/" title="Back to blog" aria-label="Back to blog" class="back-btn">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <span><a href="../index.html">Jeff Sikes</a></span>
+        </nav>
+
+        <a href="https://jeffsikes.com/blog/salesforce-data-360-2026.html" class="u-url" hidden></a>
+
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="blog-hero-bg"></div>
+            <i class="fab fa-salesforce blog-icon" aria-hidden="true"></i>
+            <h1 class="blog-title p-name">Data 360: The Foundation Under Everything (and What It's Going to Cost You)</h1>
+            <div class="blog-meta">
+                <time class="dt-published" datetime="2026-03-13">March 13, 2026</time>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag p-category">Salesforce</span>
+                <span class="blog-tag p-category">Data 360</span>
+                <span class="blog-tag p-category">Pricing</span>
+                <span class="blog-tag p-category">Associations</span>
+            </div>
+        </section>
+
+        <!-- Blog Body -->
+        <article class="blog-body e-content">
+            <p>In my <a href="salesforce-marketing-cloud-2026.html">last post</a>, I walked through the Salesforce marketing landscape in 2026 and said that Data 360 is "the price of admission" for everything new. I promised to dig into what that actually means, so here's a deeper look.</p>
+
+            <p>If you've been on Salesforce for a while, and like me, haven't touched Data Cloud (now Data 360), you're about to get very familiar with it. Because most new innovations won't work without it.</p>
+
+            <h2>First, the Name</h2>
+
+            <p>Let's get this out of the way. Data 360 is the sixth name for this product in five years. It started as Customer 360 Audiences in 2020, became Salesforce CDP in 2021, got renamed to Marketing Cloud Customer Data Platform in early 2022, turned into Salesforce Genie at Dreamforce '22, dropped the Genie branding and became Data Cloud in February 2023, and was renamed again to Data 360 at Dreamforce '25 in October 2025.</p>
+
+            <p>Six names. Same product. The community-built website <a href="https://renameforce.com" target="_blank" rel="noopener">renameforce.com</a> exists solely to track these changes. I wish I were making that up.</p>
+
+            <div class="rename-timeline" role="list" aria-label="Data 360 naming history">
+                <span class="rename-pill rename-pill-1" role="listitem">Customer 360 Audiences <span class="rename-year">2020</span></span>
+                <span class="rename-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="rename-pill rename-pill-2" role="listitem">Salesforce CDP <span class="rename-year">2021</span></span>
+                <span class="rename-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="rename-pill rename-pill-3" role="listitem">MC Customer Data Platform <span class="rename-year">2022</span></span>
+                <span class="rename-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="rename-pill rename-pill-4" role="listitem">Salesforce Genie <span class="rename-year">2022</span></span>
+                <span class="rename-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="rename-pill rename-pill-5" role="listitem">Data Cloud <span class="rename-year">2023</span></span>
+                <span class="rename-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <span class="rename-pill rename-pill-6" role="listitem">Data 360 <span class="rename-year">2025</span></span>
+            </div>
+
+            <p>For the rest of this post, I'll call it Data 360 because that's current. If you google a term from this article and can't find it, try replacing "Data 360" with "Data Cloud." The documentation hasn't fully caught up yet.</p>
+
+            <h2>What It Actually Does</h2>
+
+            <p>Data 360 is a data unification layer - what the rest of the industry calls a <a href="https://aws.amazon.com/what-is/customer-data-platform/" target="_blank" rel="noopener">Customer Data Platform (CDP)</a>. If your org has talked about building a "data lake" or a "reporting server" to pull everything into one place, Data 360 is Salesforce's answer to that same problem. It takes customer data from multiple sources - your CRM, your marketing platform, external databases, event systems, whatever - and stitches it into unified profiles. One person, one view, regardless of how many systems have records for them. The difference between Data 360 and a traditional data lake is that it doesn't just collect the data - it figures out which records belong to the same person across all those sources.</p>
+
+            <p>Think of it like a key ring. You have a house key (CRM record), a car key (marketing profile), and an office key (commerce account). Data 360 puts them all on one ring so you can grab the whole set at once. It doesn't turn them into the same key or pick a "best" key. It just connects them. That's Salesforce's own analogy and it's a good one.</p>
+
+            <p>The unified profile is what everything else runs on. Agentforce Marketing uses it for segmentation. AI agents use it for context. Einstein Personalization uses it for recommendations. Reporting uses it for cross-cloud analytics. Without it, these products don't have data to work with.</p>
+
+            <h2>Where Data 360 Is Required (and Where It Isn't)</h2>
+
+            <p>Not every Salesforce product needs Data 360. But more of them do than most people realize.</p>
+
+            <figure>
+                <img src="../assets/images/blog/data-360-dependency-tiers.png" alt="Infographic showing four tiers of Salesforce marketing product dependency on Data 360. Tier 1 (red) shows products requiring Data 360 with credit consumption: Agentforce Marketing, Campaign Agent, Einstein Segmentation, Unified Profiles, Marketing Cloud Next Flows and Journeys, and Einstein Personalization. Tier 2 (purple) shows products requiring Data 360 provisioned but where the free tier is sufficient: Agentforce Service Agent, Experience Cloud with Agentforce, and Einstein Copilot. A divider line reads Data 360 not required below this line. Tier 3 (orange) shows products enhanced by Data 360: MCE+ Bridge Features and Flow Orchestration cross-cloud. Tier 4 (green) shows products that work without Data 360: Marketing Cloud Engagement legacy, Account Engagement Pardot, and Flow Builder standard." width="1408" height="768" loading="lazy">
+                <figcaption>Data 360 marketing dependency tiers - from required with credits to not needed at all</figcaption>
+            </figure>
+
+            <p>This diagram tries to make those distinctions clear, focusing specifically on Salesforce products related to the marketing world. The key distinction most people miss is between the top two tiers. Tier 1 products (Agentforce Marketing, Campaign Agent, Einstein Segmentation, Unified Profiles, Marketing Cloud Next Flows &amp; Journeys, and Einstein Personalization) require Data 360 with real credit consumption - these are the products that will show up on your bill. Tier 2 products (Agentforce Service Agent, Experience Cloud with embedded agents, Einstein Copilot) require Data 360 to be provisioned in your org, but the free tier is enough for basic functionality.</p>
+
+            <p>That second tier is what's at play when you see Agentforce running on an Experience Cloud site. The agent needs Data 360 enabled for the Einstein Trust Layer and Data Libraries. But the $0 Salesforce Foundations provisioning covers it. You don't need to buy credits just to put an agent on your portal.</p>
+
+            <p>Below the line, your existing tools keep working. Legacy MCE, Pardot, standard Flow Builder - none of these need Data 360. Nothing you're running today is going to break. But everything Salesforce is building for marketing going forward assumes you have it.</p>
+
+            <h2>The Pricing: Two Models, Explained Simply</h2>
+
+            <p>Salesforce now offers two ways to pay for Data 360. Think of it like choosing between two electric plans when you move into a new house.</p>
+
+            <p><strong>Flex Credits</strong> are the variable-rate plan. You buy a pool of credits at $500 per 100,000. Every action you perform in Data 360 consumes credits from that pool - building segments, running identity resolution, activating audiences, querying data. Different actions cost different amounts, and the rates vary wildly. Building a segment costs 20 credits per million rows processed. Running identity resolution costs 100,000 credits per million rows. That's a 5,000x difference. If you don't know exactly how your org is going to use Data 360 (and let's be honest, you probably don't yet), you're guessing at how many credits to buy.</p>
+
+            <div class="callout">
+                <i class="fas fa-circle-info" aria-hidden="true"></i>
+                <p><strong>Good news for existing Salesforce orgs:</strong> Bringing data into Data 360 from other Salesforce products is free. CRM data, MCE data, Commerce data - zero credits for ingestion. You only start paying when you do something with the data. This changed in August 2025 and it's a big deal for associations that already have everything in Salesforce.</p>
+            </div>
+
+            <p><strong>Profile Pricing</strong> is the flat-rate plan. Instead of tracking credit consumption across dozens of operation types, you pay a set amount per customer profile per year. The essential profile-building operations - identity resolution, calculated insights, transforms, segments - are bundled into the per-profile price.</p>
+
+            <p>There are two tiers. The base Profiles plan runs $240 per 1,000 profiles per year and includes 25 calculated insights, 25 transforms, 1 identity resolution ruleset, and 100 segments. The Enterprise Profiles plan runs $420 per 1,000 profiles per year and roughly doubles or quadruples everything.</p>
+
+            <p>Here's the catch: <b>Profile Pricing isn't fully flat-rate</b>. It bundles the profile-building stuff, but queries, streaming, and real-time operations still consume Flex Credits. Every time a service agent pulls up a unified profile or a report queries Data 360 for cross-cloud analytics, that's a data query. The query rate is low (2 credits per million rows), and each profile comes with 1 Flex Credit (base) or 2 Flex Credits (enterprise) included for this purpose. For most associations, the included credits will cover normal query volume. But "flat rate" doesn't mean "unlimited" - it means the expensive stuff (identity resolution, segmentation) is predictable, and the cheap stuff (queries) is metered separately. Also worth watching: the base Profiles plan caps you at 25 Calculated Insights and 100 Segments. If you're running marketing campaigns and feeding insights to your service team, 25 might feel tight. Enterprise Profiles gives you 100, but at $420/1K profiles that's a meaningful price jump.</p>
+
+            <div class="callout">
+                <i class="fas fa-circle-info" aria-hidden="true"></i>
+                <p>I'll be honest - the whole model takes some getting used to. If you're coming from a non-Salesforce CRM backed by SQL Server or a traditional database, you could run whatever analysis you wanted against your own data, whenever you wanted, for free. Queries, reports, bulk exports at 3am - nobody was counting. Salesforce has turned access to your own data into a metered service. Every query, every insight, every time an agent pulls a profile - that's a billable event. It's a fundamentally different relationship with your data than most association IT teams are used to, and it's worth understanding that shift before the first invoice arrives.</p>
+            </div>
+
+            <h2>Napkin Math for a Mid-Size Association</h2>
+
+            <p>Let's make this concrete. Say your association has 450,000 contact records in Salesforce.</p>
+
+            <p>On the <strong>Profiles plan</strong> at $240 per 1,000 profiles: 450 x $240 = roughly $108,000 per year. That gets you identity resolution, 25 calculated insights, 25 data transforms, 100 segments, and 450,000 Flex Credits for queries and other operations. The big-ticket item - identity resolution - is included. That's the one that would eat your Flex Credits alive on the variable plan.</p>
+
+            <p>On <strong>Flex Credits only</strong>: it depends entirely on what you do. Identity resolution alone for 450,000 profiles costs about 45,000 credits per run. If you run it daily because you're doing bulk imports and updates, that's roughly 1.35 million credits per month. At $500 per 100,000 credits, that's $6,750/month just for identity resolution - about $81,000/year - <i>and you haven't built a segment yet</i>.</p>
+
+            <p>This is napkin math. But the shape of the comparison is clear: if identity resolution is a major part of your workload (and for associations doing bulk data operations, it probably is), Profile Pricing is likely the more predictable path.</p>
+
+            <h2>The Free Tier Is Real, But It's Small</h2>
+
+            <p>Salesforce Foundations gives you Data 360 for free with about 260,000 credits and 1 TB of storage. For a small association with under 50,000 contacts that's primarily using CRM data? That might be enough to get started and explore. For a mid-size org doing regular bulk imports and running marketing campaigns? You'll burn through it fast.</p>
+
+            <p>The free tier is best thought of as a trial, not a long-term plan. Use it to get Data 360 provisioned, explore the tools, and build your business case for a real budget allocation. Don't use it to run production workloads and then be surprised when the credits dry up. You can track consumption using the Digital Wallet tool, which shows near-real-time usage data.</p>
+
+            <h2>Before You Panic: Talk to Your Account Executive (AE)</h2>
+
+            <p>Salesforce has a pricing calculator on their website that lets you estimate costs for different scenarios. Fair warning: it's complex. There are dozens of operation types, each with different credit multipliers, and the inputs assume you know things like how many rows per million you'll process for calculated insights. If you're not a Data 360 specialist, this tool will raise more questions than it answers.</p>
+
+            <div class="callout">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                <p><strong>Budget tip:</strong> Don't try to fill out the pricing calculator alone. Schedule time with your Salesforce Account Executive and walk through it together. Bring your actual numbers - how many contacts you have, how often you import data, how many segments you think you'll need, what external data sources you plan to connect. An hour with your AE now saves a painful budget conversation later.</p>
+            </div>
+
+            <h2>What This Means for Your Association</h2>
+
+            <p><strong>If you're a small association</strong> (under 50,000 contacts, mostly CRM data), start with the free Salesforce Foundations tier. Explore Data 360, build a few test segments, and see how credits get consumed before committing budget.</p>
+
+            <p><strong>If you're mid-size</strong> (100,000 to 500,000 contacts, regular bulk imports, external data sources), look seriously at Profile Pricing. The predictability is worth the premium if identity resolution is going to be a regular part of your operations. Run the numbers with your AE.</p>
+
+            <p><strong>If you're large</strong> and already deep into MCE with complex data operations, this is a contract negotiation conversation. The profile and credit models have different economics at scale, and the answer depends on your specific data patterns. Don't guess. Model it.</p>
+
+            <p>Whatever path you choose, the one thing I'd push you to do today is get Data 360 provisioned in your org through Salesforce Foundations. It's free. It doesn't commit you to anything. And when the time comes to enable Agentforce features or move to MCE+, you'll be glad you already have the foundation in place. The <a href="https://trailhead.salesforce.com/content/learn/trails/grow-your-business-with-salesforce-foundations" target="_blank" rel="noopener">Grow Your Business with Salesforce Foundations</a> trail on Trailhead walks through the setup.</p>
+
+            <p><em>This is post 2 of 5 in a series on Salesforce Agentforce Marketing. <a href="salesforce-marketing-cloud-2026.html">Post 1</a> covered the landscape. Post 3 covers the Flows permissions story. Posts 4 and 5 cover new Flow features and Two-Way Conversations.</em></p>
+
+            <h2>References</h2>
+            <ul class="references">
+                <li><a href="https://www.salesforce.com/data/pricing/" target="_blank" rel="noopener">Salesforce Data 360 Pricing</a> - Official pricing page with Flex Credits and Profile Pricing comparison</li>
+                <li><a href="https://www.salesforce.com/data/pricing/#calculator" target="_blank" rel="noopener">Data 360 Pricing Calculator</a> - Estimate your costs (bring your AE)</li>
+                <li><a href="https://www.salesforce.com/blog/data-cloud-pricing-updates/" target="_blank" rel="noopener">Simpler, More Accessible Pricing for Data Cloud</a> - Official blog on September 2025 pricing changes</li>
+                <li><a href="https://trailhead.salesforce.com/content/learn/modules/data-cloud-quick-look" target="_blank" rel="noopener">Data 360 Credit Consumption Quick Look</a> - Trailhead module on how credits work</li>
+                <li><a href="https://trailhead.salesforce.com/content/learn/modules/get-to-know-unified-profiles" target="_blank" rel="noopener">Get to Know Unified Profiles</a> - Trailhead module on the key ring analogy</li>
+                <li><a href="https://www.salesforce.com/agentforce/data-cloud/" target="_blank" rel="noopener">Understanding Data Cloud's Role in Agentforce</a> - Why Data 360 is required for Agentforce</li>
+                <li><a href="https://www.salesforceben.com/salesforce-data-cloud-renamed-to-data-360-as-part-of-agentforce-360/" target="_blank" rel="noopener">Salesforce Data Cloud Renamed to Data 360</a> - Salesforce Ben on the rename</li>
+                <li><a href="https://www.salesforceben.com/new-pricing-for-salesforce-data-cloud/" target="_blank" rel="noopener">New Pricing for Salesforce Data Cloud</a> - Salesforce Ben pricing analysis</li>
+                <li><a href="https://www.digitalmass.com/blog/data-360-tco-analysis-2026/" target="_blank" rel="noopener">The Hidden Costs of Data 360: A Real TCO Analysis for 2026</a> - Digital Mass consultant perspective</li>
+                <li><a href="https://www.davidpalencia.com/data-cloud-pricing-credit-consumption/" target="_blank" rel="noopener">Data Cloud Pricing and Credit Consumption</a> - David Palencia's detailed breakdown</li>
+                <li><a href="https://www.salesforce.com/data/pricing/rate-multipliers/" target="_blank" rel="noopener">Salesforce Data 360 Rate Multipliers</a> - Official rate card</li>
+                <li><a href="https://trailhead.salesforce.com/content/learn/trails/grow-your-business-with-salesforce-foundations" target="_blank" rel="noopener">Grow Your Business with Salesforce Foundations</a> - Trailhead trail for enabling and exploring Foundations</li>
+                <li><a href="https://trailhead.salesforce.com/content/learn/modules/data-and-identity-in-data-cloud" target="_blank" rel="noopener">Data and Identity in Data 360</a> - Trailhead module on unified profiles and identity resolution</li>
+                <li><a href="https://trailhead.salesforce.com/content/learn/trails/data-cloud-learning-journey" target="_blank" rel="noopener">Data 360 Learning Journey</a> - Three-part progressive trail from fundamentals through advanced implementation</li>
+            </ul>
+        </article>
+
+        <!-- Author Bio -->
+        <div class="author-bio p-author h-card">
+            <a href="https://jeffsikes.com" class="u-url p-name" hidden>Jeff Sikes</a>
+            Jeff Sikes is a technology consultant with 28 years of experience, including 13+ years leading development teams at a national association. He is a certified Salesforce Platform professional and operates Box464 Holdings LLC.
+        </div>
+
+        <!-- Tech Tags -->
+        <div class="tech-tags">
+            <span class="tech-tag">Salesforce</span>
+            <span class="tech-tag">Data 360</span>
+            <span class="tech-tag">Pricing</span>
+            <span class="tech-tag">CDP</span>
+            <span class="tech-tag">Associations</span>
+            <span class="tech-tag">Agentforce</span>
+        </div>
+
+        <!-- Back Link -->
+        <a href="../blog/" class="back-link">Back to blog</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="mailto:hire.jeff@box464.com">hire.jeff@box464.com</a> ·
+                <a href="https://linkedin.com/in/jsikes" target="_blank" rel="noopener">LinkedIn</a> ·
+                <a href="../blog/">Blog</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Sync icon with current theme (set by early script in <head>)
+        if (html.getAttribute('data-theme') === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') || 'light';
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun" aria-hidden="true"></i>' : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        });
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

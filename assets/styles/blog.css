@@ -126,7 +126,7 @@ nav.blog-nav span a:hover {
 }
 
 .blog-body p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--color-text-muted);
   margin-bottom: 1.5rem;
@@ -168,7 +168,7 @@ nav.blog-nav span a:hover {
 
 .blog-body ul,
 .blog-body ol {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--color-text-muted);
   margin-bottom: 1.5rem;
@@ -239,16 +239,19 @@ nav.blog-nav span a:hover {
 }
 
 /* ========== REFERENCES ========== */
-.blog-body .references {
-  list-style: none;
+.blog-body ul.references {
+  list-style-type: none;
   padding-left: 0;
+  margin-left: 0;
   font-size: 0.85rem;
   --pico-typography-spacing-vertical: 0;
 }
 
-.blog-body .references li {
+.blog-body ul.references li {
+  list-style-type: none;
   margin-bottom: 0.75rem;
   line-height: 1.6;
+  padding-left: 0;
 }
 
 /* ========== CALLOUTS ========== */
@@ -277,6 +280,65 @@ nav.blog-nav span a:hover {
   margin-bottom: 0;
   color: var(--color-text);
   font-size: 0.92rem;
+}
+
+/* ========== RENAME TIMELINE ========== */
+.rename-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+  align-items: center;
+}
+
+.rename-timeline .rename-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.rename-timeline .rename-pill .rename-year {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.rename-timeline .rename-arrow {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.rename-pill-1 { background: #fde8e8; color: #991b1b; }
+.rename-pill-2 { background: #fef3c7; color: #92400e; }
+.rename-pill-3 { background: #d1fae5; color: #065f46; }
+.rename-pill-4 { background: #dbeafe; color: #1e40af; }
+.rename-pill-5 { background: #ede9fe; color: #5b21b6; }
+.rename-pill-6 { background: #fce7f3; color: #9d174d; }
+
+[data-theme="dark"] .rename-pill-1 { background: #5a1a1a; color: #fca5a5; }
+[data-theme="dark"] .rename-pill-2 { background: #5a3e0a; color: #fcd34d; }
+[data-theme="dark"] .rename-pill-3 { background: #0a4a3a; color: #6ee7b7; }
+[data-theme="dark"] .rename-pill-4 { background: #1a2e5a; color: #93c5fd; }
+[data-theme="dark"] .rename-pill-5 { background: #2e1a5a; color: #c4b5fd; }
+[data-theme="dark"] .rename-pill-6 { background: #5a1a3a; color: #f9a8d4; }
+
+@media (max-width: 600px) {
+  .rename-timeline {
+    gap: 0.35rem;
+  }
+  .rename-timeline .rename-pill {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+  .rename-timeline .rename-arrow {
+    font-size: 0.65rem;
+  }
 }
 
 /* ========== AUTHOR BIO ========== */

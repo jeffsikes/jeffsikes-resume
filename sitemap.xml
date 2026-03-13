@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jeffsikes.com/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,10 +61,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://jeffsikes.com/stories/knowledge-transfer.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jeffsikes.com/blog/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jeffsikes.com/blog/salesforce-data-360-2026.html</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jeffsikes.com/blog/salesforce-marketing-cloud-2026.html</loc>
@@ -74,7 +86,7 @@
   </url>
   <url>
     <loc>https://jeffsikes.com/blog/feed.xml</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>

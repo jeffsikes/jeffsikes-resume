@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="llms" href="../llms.txt" type="text/plain">
+    <script>
+      (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <meta name="description" content="How Jeff Sikes turned 13 years of institutional knowledge into an AI-powered, searchable knowledge base during a platform migration.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Turned Tribal Knowledge into an AI Knowledge Base | Jeff Sikes">
+  <meta property="og:description" content="How Jeff Sikes turned 13 years of institutional knowledge into an AI-powered, searchable knowledge base during a platform migration.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jeffsikes.com/stories/knowledge-transfer.html">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leadership for Non-Profits">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Turned Tribal Knowledge into an AI Knowledge Base | Jeff Sikes">
+  <meta name="twitter:description" content="How Jeff Sikes turned 13 years of institutional knowledge into an AI-powered, searchable knowledge base during a platform migration.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/stories/knowledge-transfer.html">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Turned Tribal Knowledge into an AI Knowledge Base",
+    "description": "How Jeff Sikes turned 13 years of institutional knowledge into an AI-powered, searchable knowledge base during a platform migration.",
+    "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jeff Sikes"
+    },
+    "mainEntityOfPage": "https://jeffsikes.com/stories/knowledge-transfer.html",
+    "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg"
+  }
+  </script>
+    <title>Turned Tribal Knowledge into an AI Knowledge Base | Jeff Sikes Resume</title>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/story.css">
+
+</head>
+<body>
+    <a href="#story-content" class="skip-link">Skip to content</a>
+    <main id="story-content">
+        <!-- Top Navigation -->
+        <nav class="story-nav">
+            <a href="../index.html" title="Back to profile" aria-label="Back to profile">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <span>Jeff Sikes</span>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="story-hero">
+            <div class="story-hero-bg"></div>
+            <i class="fas fa-book-open story-icon" aria-hidden="true" style="view-transition-name: icon-knowledge;"></i>
+            <h1 class="story-title">Turned Tribal Knowledge into an AI Knowledge Base</h1>
+        </section>
+
+        <!-- Story Body -->
+        <article class="story-body">
+            <p>After 13 years as Director of Application Development at AANP, I resigned in October 2025. A month later, they brought me back as a contractor. The ask was straightforward: transfer everything in my head into something the team could actually use after I was gone.</p>
+
+            <p>That's a deceptively hard problem. Thirteen years of context - why systems were built a certain way, which vendor quirks to watch for, where the bodies are buried in the data model - doesn't fit neatly into a wiki. Especially when the organization is mid-migration from a legacy AMS to Salesforce and half the infrastructure is still in flight.</p>
+
+            <p>I authored over 160 technical documents (Salesforce architecture, payment processing, integrations, infrastructure, vendor support references, architecture diagrams, and third-party systems) all built on Zensical (a fork of MkDocs) with a custom style guide, YAML frontmatter standards, and Mermaid diagrams. But the part I'm most proud of is what happened when I realized traditional documentation wasn't going to be enough. I built an AI-powered knowledge base using Cloudflare AutoRAG with six separate indexed knowledge bases covering metadata, code, data migration scripts, business requirements, working notes, and processed video transcripts. Staff could ask questions in plain language and get cited answers, with source hierarchy weighting so they'd know whether they were reading authoritative documentation or a demo recording.</p>
+
+            <p>The video piece was its own project. When I resigned, a team member gifted me a Jetson Orin Nano Super (a tiny AI computer) and joked that I should use it to build "JeffGPT." So I did, more or less. I ran 230+ training recordings through a local Whisper transcription pipeline on that little machine, then used the Anthropic API to convert raw transcripts into structured documents with topic extraction, confidence tiers, and YAML metadata. Those got indexed separately so the AI could distinguish between "Jeff demonstrated this in a video" and "this is the documented procedure."</p>
+
+            <p>I also built tooling to protect institutional knowledge the org didn't fully control - nightly backups of vendor project history, automated syncs of source repositories into AANP-owned infrastructure, and a React-based chat interface for querying the whole knowledge base. Everything was transferred to the organization before I wrapped up.</p>
+
+            <p>The engagement ran about two months. But the real deliverable was something harder to put on an invoice: the confidence that when the next person has a question about why something works the way it does, there's an answer waiting for them.</p>
+        </article>
+
+        <!-- Testimonial - uncomment when Kristin approves
+        <div class="testimonial">
+            <div class="quote-text">"Jeff didn't just document what he knew - he built systems so the knowledge would outlive his tenure. He turned years of tribal knowledge into something our team could actually search, reference, and trust. That kind of care for the people who come after you is rare, and it made a real difference for our organization."</div>
+            <div class="quote-attribution">- <a href="https://www.linkedin.com/in/kristin-brookshire9691aa2b/" target="_blank" rel="noopener">Kristin B.</a></div>
+        </div>
+        -->
+
+        <!-- Tech Tags -->
+        <div class="tech-tags">
+            <span class="tech-tag">Knowledge Transfer</span>
+            <span class="tech-tag">AI / RAG</span>
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">Documentation</span>
+            <span class="tech-tag">Whisper</span>
+            <span class="tech-tag">Claude API</span>
+        </div>
+
+        <!-- Back Link -->
+        <a href="../index.html" class="back-link">Back to profile</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="mailto:hire.jeff@box464.com">hire.jeff@box464.com</a> ·
+                <a href="https://linkedin.com/in/jsikes" target="_blank" rel="noopener">LinkedIn</a> ·
+                <a href="../blog/">Blog</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Sync icon with current theme (set by early script in <head>)
+        if (html.getAttribute('data-theme') === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') || 'light';
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun" aria-hidden="true"></i>' : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        });
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

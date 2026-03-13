@@ -86,7 +86,7 @@ nav.story-nav span {
 }
 
 .story-body p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--color-text-muted);
   margin-bottom: 1.5rem;
@@ -113,7 +113,7 @@ nav.story-nav span {
 }
 
 .testimonial .quote-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.7;
   color: var(--color-text);

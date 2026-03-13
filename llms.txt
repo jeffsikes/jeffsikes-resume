@@ -149,8 +149,10 @@ This site includes machine-readable data in multiple formats:
 - Resume: https://jeffsikes.com/resume.html
 - Resume (JSON): https://jeffsikes.com/resume.json
 - Blog: https://jeffsikes.com/blog/
+- Blog - Data 360: The Foundation Under Everything: https://jeffsikes.com/blog/salesforce-data-360-2026.html
 - Blog - Salesforce Marketing Cloud in 2026: https://jeffsikes.com/blog/salesforce-marketing-cloud-2026.html
 - Blog RSS Feed (Atom): https://jeffsikes.com/blog/feed.xml
+- Story - Turned Tribal Knowledge into an AI Knowledge Base: https://jeffsikes.com/stories/knowledge-transfer.html
 - Story - Built a Dev Team: https://jeffsikes.com/stories/built-a-dev-team.html
 - Story - Scaled Systems: https://jeffsikes.com/stories/scaled-systems.html
 - Story - Automated Data Merge: https://jeffsikes.com/stories/automated-data-merge.html
