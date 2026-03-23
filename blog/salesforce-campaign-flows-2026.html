@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="llms" href="../llms.txt" type="text/plain">
+    <link rel="alternate" type="application/atom+xml" title="Jeff Sikes - Blog" href="https://jeffsikes.com/blog/feed.xml">
+    <script>
+      (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <meta name="description" content="Salesforce Campaign Flows give marketing users real automation power while keeping admin Flows safely walled off. Here's how the permission model works.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="You Got Your Marketing Journey in My Flows!">
+  <meta property="og:description" content="Campaign Flows give marketing users automation power while keeping admin Flows safe. How the permission model works for associations.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html">
+  <meta property="og:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <meta property="og:image:alt" content="Jeff Sikes - Technology Leadership for Non-Profits">
+  <meta property="article:published_time" content="2026-03-23">
+  <meta property="article:author" content="Jeff Sikes">
+  <meta property="article:tag" content="Salesforce">
+  <meta property="article:tag" content="Flows">
+  <meta property="article:tag" content="Agentforce">
+  <meta property="article:tag" content="Associations">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="You Got Your Marketing Journey in My Flows!">
+  <meta name="twitter:description" content="Campaign Flows give marketing users automation power while keeping admin Flows safe. How the permission model works for associations.">
+  <meta name="twitter:image" content="https://jeffsikes.com/assets/images/og-image.png">
+  <link rel="canonical" href="https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html">
+
+  <!-- Schema.org BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "You Got Your Marketing Journey in My Flows!",
+    "description": "Salesforce Campaign Flows give marketing users real automation power while keeping admin Flows safely walled off. Here's how the permission model works.",
+    "datePublished": "2026-03-23T00:00:00-05:00",
+    "dateModified": "2026-03-23T00:00:00-05:00",
+    "author": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com",
+      "image": "https://jeffsikes.com/assets/images/avatars/headshot-color.jpeg"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jeff Sikes",
+      "url": "https://jeffsikes.com"
+    },
+    "mainEntityOfPage": "https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://jeffsikes.com/assets/images/blog/flows-and-journeys-admin-panic.jpg",
+      "caption": "Three-panel meme showing Marketing Users, Salesforce Users, and SF Admins reacting to Flows and Journeys convergence"
+    },
+    "keywords": ["Salesforce", "Flows", "Campaign Flows", "Agentforce", "Associations", "Permissions"]
+  }
+  </script>
+    <title>You Got Your Marketing Journey in My Flows! | Jeff Sikes</title>
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..700;1,9..40,100..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/blog.css">
+
+</head>
+<body>
+    <a href="#blog-content" class="skip-link">Skip to content</a>
+    <main id="blog-content" class="h-entry">
+        <!-- Top Navigation -->
+        <nav class="blog-nav">
+            <a href="../blog/" title="Back to blog" aria-label="Back to blog" class="back-btn">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <span><a href="../index.html">Jeff Sikes</a></span>
+        </nav>
+
+        <a href="https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html" class="u-url" hidden></a>
+
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="blog-hero-bg"></div>
+            <i class="fab fa-salesforce blog-icon" aria-hidden="true"></i>
+            <h1 class="blog-title p-name">You Got Your Marketing Journey in My Flows!</h1>
+            <div class="blog-meta">
+                <time class="dt-published" datetime="2026-03-23">March 23, 2026</time>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag p-category">Salesforce</span>
+                <span class="blog-tag p-category">Flows</span>
+                <span class="blog-tag p-category">Agentforce</span>
+                <span class="blog-tag p-category">Associations</span>
+            </div>
+        </section>
+
+        <!-- Blog Body -->
+        <article class="blog-body e-content">
+            <p>If you're old enough to remember the Reese's Peanut Butter Cups commercials, you know the bit. Two people collide. One's eating peanut butter, the other's eating chocolate. "Hey! You got your peanut butter in my chocolate!" And then they realize - wait, this is actually pretty good.</p>
+
+            <p>That's basically what Salesforce just did with Flows and Journeys. Except in this version, the Salesforce user is holding the peanut butter and the marketing user is holding the chocolate. And the admin is not yet convinced this tastes good.</p>
+
+            <figure class="blog-photo">
+                <img src="../assets/images/blog/flows-and-journeys-admin-panic.jpg" alt="Three-panel meme. First panel: a smiling stick figure labeled 'Marketing Users' saying 'I've got access to Flows in Journeys now!' Second panel: a smiling stick figure labeled 'Salesforce Users' saying 'I've got access to Journeys in Flows now!' Third panel: a stick figure labeled 'SF Admins' with a concerned 'realization' expression." loading="lazy">
+                <figcaption>The admin reaction to Flows and Journeys convergence</figcaption>
+            </figure>
+
+            <h2>The Setup</h2>
+
+            <p>In <a href="salesforce-marketing-cloud-2026.html">my first post</a> in this series, I mentioned that Agentforce Marketing gives marketing users access to Salesforce Flows. I said admins should pay attention. In <a href="salesforce-data-360-2026.html">the second post</a>, I covered Data 360 and what it costs. Now let's talk about what happens when marketing users get their hands on Flow Builder.</p>
+
+            <p>Flows are the backbone of Salesforce automation. Record-triggered flows, screen flows, scheduled flows - they touch everything. If a record updates, a notification fires, a field calculates, or a process kicks off, there's probably a Flow behind it. For most orgs, Flows are admin territory. You build them in Setup. You test them in sandboxes. You deploy them carefully because a bad Flow can break things in ways that are hard to trace.</p>
+
+            <p>Marketing journeys have historically lived in a completely different world. Journey Builder runs on the Marketing Cloud Engagement (MCE) infrastructure - the old ExactTarget platform Salesforce acquired in 2013. It has its own data model, its own logic, its own everything. The two systems talked to each other through connectors and APIs, but they didn't share a workspace.</p>
+
+            <p>Now they do. Sort of.</p>
+
+            <p>With MCE+ and the broader Agentforce Marketing platform, Salesforce is converging Flows and Journeys into a shared orchestration layer. Marketing users can build automations using Flow Builder. Flows can trigger Journey Builder journeys. Journey events can trigger Flows. It's a two-way street.</p>
+
+            <p>And if you're a Salesforce admin, your first reaction is probably: "Who authorized this?"</p>
+
+            <h2>Why Admins Are Nervous</h2>
+
+            <p>The concern is legitimate. Flow Builder isn't a sandboxed toy. A Flow running in System Context can read and write data that the user who triggered it doesn't even have access to. Flows can create records, delete records, call external services, send emails, update fields across objects - the full toolkit. Giving marketing users access to that power without guardrails would be like handing someone the keys to the server room because they needed to check the thermostat.</p>
+
+            <p>Admins have spent years building governance around Flows. Naming conventions, testing protocols, deployment processes, careful permission management. The idea that a marketing team member could spin up a Flow that touches production data? That's not a feature request. That's a nightmare scenario.</p>
+
+            <p>So when Salesforce announced this convergence, I wanted to know: did they actually think about governance, or did they just ship it?</p>
+
+            <h2>Campaign Flows: The Guardrail</h2>
+
+            <p>They thought about it. The answer is called <strong><a href="https://www.salesforceben.com/marketing-cloud-growth-campaign-flows-vs-salesforce-flows/" target="_blank" rel="noopener">Campaign Flows</a></strong>.</p>
+
+            <p>Campaign Flows are a deliberately restricted subset of Salesforce Flows built specifically for marketing use cases. They look like Flows. They live in <a href="https://trailhead.salesforce.com/content/learn/modules/flow-basics" target="_blank" rel="noopener">Flow Builder</a>. But they are not the same thing as the Flows your admin builds in Setup.</p>
+
+            <p>Here's how they're different:</p>
+
+            <p><strong>Where you access them.</strong> Campaign Flows are accessed from the Marketing app and Campaign records - not from Salesforce Setup. A marketing user with the right permissions will see them in their workspace. They won't see the admin's record-triggered flows, scheduled flows, or any of the other automation that keeps the org running.</p>
+
+            <p><strong>What triggers them.</strong> Campaign Flows use marketing-specific triggers: segment-triggered, form-triggered, automation event-triggered. They don't use the standard record-triggered or platform event triggers that admin flows rely on. Different entry points, different use cases.</p>
+
+            <p><strong>What elements are available.</strong> This is the big one. Marketing users building Campaign Flows get a stripped-down element palette. Wait elements and Decision elements are available - those are essential for journey logic. But Assignment, Get Records, Loop, and Formula creation? Not available. The Toolbox panel is hidden entirely. You can build marketing automation logic, but you can't query arbitrary objects or loop through record collections.</p>
+
+            <figure>
+                <img src="../assets/images/blog/d1.png" alt="Infographic comparing Admin Flows and Campaign Flows side by side. Admin Flows (Setup Access Required) include Record Triggers, Platform Events, Scheduled Triggers, Get Records, Loops, Assignments, Formulas, Apex Actions, External Services, and Decisions and Waits. Campaign Flows (Marketing App) include only Segment Triggers, Form Triggers, Automation Events, Decisions and Waits, Send Email and SMS, and Add to Campaign." width="1408" height="768" loading="lazy">
+                <figcaption>Admin Flows vs. Campaign Flows - the deliberately restricted element palette</figcaption>
+            </figure>
+
+            <h2>The Permission Model</h2>
+
+            <p>Salesforce enforces the separation through two permission sets designed for this exact scenario.</p>
+
+            <p><strong>Marketing Cloud Admin</strong> gets the full picture. Campaign management, segments, all flows (including admin-level flows), and access to Salesforce Setup for Marketing Cloud configuration. This is your marketing operations person or your Salesforce admin who also handles the marketing platform.</p>
+
+            <p><strong>Marketing Cloud Manager</strong> gets campaign management, segments, and Campaign Flows only. No "Manage Flow" system permission. No Setup access. No visibility into admin-level Flows at all.</p>
+
+            <p>The distinction matters. A user with only the Marketing Cloud Manager permission set can build, modify, and activate Campaign Flows. They cannot see, touch, or accidentally break any admin Flow. The two worlds stay separate.</p>
+
+            <figure>
+                <img src="../assets/images/blog/d2.png" alt="Infographic comparing Marketing Cloud Admin and Marketing Cloud Manager permission sets. Admin gets Campaign Management, Segments, All Flows (Admin + Campaign), Salesforce Setup Access, and Manage Flow Permission. Manager gets Campaign Management, Segments, and Campaign Flows Only - but is denied Manage Flow Permission, Setup Access, and Admin Flow Visibility." width="1408" height="768" loading="lazy">
+                <figcaption>Permission Set comparison - what Marketing Cloud Manager can and cannot do</figcaption>
+            </figure>
+
+            <h2>Record-Based Sharing (This Part Is Clever)</h2>
+
+            <p>Here's where Salesforce did something architecturally interesting. Admin Flows are metadata - they're visible to anyone with the "Manage Flow" permission, org-wide. There's no concept of "this flow belongs to the marketing team" vs. "this flow belongs to the sales ops team." If you can manage flows, you can see all of them.</p>
+
+            <p>Campaign Flows work differently. They generate data records alongside the flow metadata. That means standard Salesforce sharing infrastructure applies. Campaign Flow sharing defaults to <strong>private</strong>. An admin can control visibility using sharing rules, public groups, roles, and manual sharing - the same tools you use for any other object.</p>
+
+            <p>In practice, this means a marketing team lead can share specific Campaign Flows with their team without exposing another department's flows. Regional marketing teams can have their own Campaign Flows that other regions can't see or modify. That kind of granularity simply doesn't exist for admin Flows.</p>
+
+            <h2>The Hidden Danger: Permission Creep</h2>
+
+            <div class="callout">
+                <i class="fas fa-circle-info" aria-hidden="true"></i>
+                <p><strong>Hidden danger:</strong> Some out-of-the-box Salesforce permission sets quietly include Flow permissions you might not expect. Sales Engagement, Revenue Cloud Advanced, and others can carry "Run Flows" or even "Manage Flows" permissions baked in. Audit your Permission Set Groups before turning on Campaign Flows.</p>
+            </div>
+
+            <p>If you're an admin reading this, go audit your <a href="https://www.salesforceben.com/an-admins-guide-to-avoiding-risky-defaults-in-salesforce-permission-sets/" target="_blank" rel="noopener">Permission Set Groups</a>. Salesforce recommends using <strong>Muting Permission Sets</strong> to suppress those hidden defaults. A Muting Permission Set lets you block specific permissions within a Permission Set Group without modifying the original permission sets. It's the Salesforce equivalent of saying "yes, they have this license, but no, they don't get that one specific thing."</p>
+
+            <div class="callout">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                <p><strong>Check your execution context:</strong> Flows can run in System Context (full system-level access regardless of who triggered it) or User Context (respects the running user's field-level and object-level security). For Campaign Flows built by marketing users, User Context is almost certainly what you want. Don't assume the default is safe - verify it.</p>
+            </div>
+
+            <figure>
+                <img src="../assets/images/blog/d3.png" alt="Admin Permission Audit Checklist infographic with three steps. Step 1: Audit Permission Set Groups, with warning that some include hidden Run Flows or Manage Flows permissions - use Muting Permission Sets to suppress them. Step 2: Check Flow Execution Context, with warning that Campaign Flows should run in User Context not System Context. Step 3: Configure Campaign Flow Sharing - set org-wide default to Private, create sharing rules per team or role, test that marketing users cannot see admin flows. Ends with Governance Ready." width="1408" height="768" loading="lazy">
+                <figcaption>Admin Permission Audit Checklist - three steps to governance-ready Campaign Flows</figcaption>
+            </figure>
+
+            <h2>What This Means for Your Org</h2>
+
+            <p>If you're an admin: this requires preparation, not panic. Audit your existing permission sets for hidden Flow permissions. Understand the Campaign Flow sharing model before it gets turned on. And have a conversation with your marketing team about what they're planning to build - not to gatekeep, but to make sure everyone understands the boundaries.</p>
+
+            <p>If you're a marketing user: you're getting real power here. Campaign Flows let you build automation that responds to CRM events in real time without filing a ticket and waiting. But respect the boundaries. The restricted element palette isn't Salesforce being stingy - it's protecting you from building something that breaks in ways you can't debug.</p>
+
+            <p>If you're at an association where one person wears both hats: welcome to the club. Campaign Flows give you a clean way to separate your marketing automation from your system automation, even if you're the one building both. Future you will thank present you when something goes wrong and you need to figure out which flow did it.</p>
+
+            <h2>The Peanut Butter Verdict</h2>
+
+            <p>The Reese's people were right. Peanut butter and chocolate do go well together - but only if someone is managing the ratio.</p>
+
+            <p>Salesforce's Campaign Flows architecture is that ratio management. It gives marketing users meaningful automation power while keeping admin flows safely walled off. The permission model is thoughtful. The sharing model is genuinely clever. And the element restrictions show that someone at Salesforce actually talked to admins before shipping this.</p>
+
+            <p>It's not perfect. The community has flagged that Campaign Flows are still missing Journey Builder features like goals, exit criteria, and path optimization. But as a permissions and governance story? They got this one mostly right.</p>
+
+            <p><em>This is post 3 of 3 in a series on Salesforce Agentforce Marketing. <a href="salesforce-marketing-cloud-2026.html">Post 1</a> covered the landscape. <a href="salesforce-data-360-2026.html">Post 2</a> covered Data 360 and pricing.</em></p>
+
+            <h2>References</h2>
+            <ul class="references">
+                <li><a href="https://www.salesforceben.com/marketing-cloud-growth-campaign-flows-vs-salesforce-flows/" target="_blank" rel="noopener">Marketing Cloud Growth Campaign Flows vs. Salesforce Flows</a> - Salesforce Ben</li>
+                <li><a href="https://www.salesforceben.com/an-admins-guide-to-avoiding-risky-defaults-in-salesforce-permission-sets/" target="_blank" rel="noopener">An Admin's Guide to Avoiding Risky Defaults in Salesforce Permission Sets</a> - Salesforce Ben</li>
+                <li><a href="https://developer.salesforce.com/docs/marketing/marketing-cloud-growth/guide/mc-administration.html" target="_blank" rel="noopener">Configure your Org - Marketing Cloud Next</a> - Salesforce Developer Docs</li>
+                <li><a href="https://gettectonic.com/salesforce-campaign-flows-a-new-era-of-automation/" target="_blank" rel="noopener">Salesforce Campaign Flows: A New Era of Automation</a> - Tectonic</li>
+                <li><a href="https://the-agentic-marketer.com/marketing-cloud-next-deep-dives/marketing-cloud-next-8-flow-types/" target="_blank" rel="noopener">Marketing Cloud Next: The 8 Main Marketing Flow Types</a> - The Agentic Marketer</li>
+            </ul>
+        </article>
+
+        <!-- Author Bio -->
+        <div class="author-bio p-author h-card">
+            <a href="https://jeffsikes.com" class="u-url p-name" hidden>Jeff Sikes</a>
+            Jeff Sikes is a technology consultant with 28 years of experience, including 13+ years leading development teams at a national association. He is a certified Salesforce Platform professional and operates Box464 Holdings LLC.
+        </div>
+
+        <!-- Tech Tags -->
+        <div class="tech-tags">
+            <span class="tech-tag">Salesforce</span>
+            <span class="tech-tag">Flows</span>
+            <span class="tech-tag">Campaign Flows</span>
+            <span class="tech-tag">Agentforce</span>
+            <span class="tech-tag">Associations</span>
+            <span class="tech-tag">Permissions</span>
+        </div>
+
+        <!-- Back Link -->
+        <a href="../blog/" class="back-link">Back to blog</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="mailto:hire.jeff@box464.com">hire.jeff@box464.com</a> ·
+                <a href="https://linkedin.com/in/jsikes" target="_blank" rel="noopener">LinkedIn</a> ·
+                <a href="../blog/">Blog</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Image Modal -->
+    <dialog class="img-modal" id="imgModal">
+        <img src="" alt="">
+    </dialog>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        // Image Modal
+        const modal = document.getElementById('imgModal');
+        const modalImg = modal.querySelector('img');
+        document.querySelectorAll('.blog-body figure img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modal.showModal();
+            });
+        });
+        modal.addEventListener('click', () => modal.close());
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Sync icon with current theme (set by early script in <head>)
+        if (html.getAttribute('data-theme') === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') || 'light';
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun" aria-hidden="true"></i>' : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        });
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://js-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

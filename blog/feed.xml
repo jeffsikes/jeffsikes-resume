@@ -5,11 +5,24 @@
     <link href="https://jeffsikes.com/blog/feed.xml" rel="self" type="application/atom+xml"/>
     <link href="https://jeffsikes.com/blog/" rel="alternate" type="text/html"/>
     <id>https://jeffsikes.com/blog/</id>
-    <updated>2026-03-13T00:00:00Z</updated>
+    <updated>2026-03-23T00:00:00Z</updated>
     <author>
         <name>Jeff Sikes</name>
         <uri>https://jeffsikes.com</uri>
     </author>
+
+    <entry>
+        <title>You Got Your Marketing Journey in My Flows!</title>
+        <link href="https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html" rel="alternate" type="text/html"/>
+        <id>https://jeffsikes.com/blog/salesforce-campaign-flows-2026.html</id>
+        <published>2026-03-23T00:00:00Z</published>
+        <updated>2026-03-23T00:00:00Z</updated>
+        <summary>Salesforce Campaign Flows give marketing users real automation power while keeping admin Flows safely walled off. Here's how the permission model works.</summary>
+        <category term="Salesforce"/>
+        <category term="Flows"/>
+        <category term="Agentforce"/>
+        <category term="Associations"/>
+    </entry>
 
     <entry>
         <title>Data 360: The Foundation Under Everything (and What It's Going to Cost You)</title>

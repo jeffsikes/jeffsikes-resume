@@ -242,6 +242,8 @@
                 <li><a href="https://www.salesforceben.com/the-state-of-salesforce-nonprofit-offerings-in-2026/" target="_blank" rel="noopener">The State of Salesforce Nonprofit Offerings in 2026</a> - Salesforce Ben on NPSP and Nonprofit Cloud</li>
                 <li><a href="https://www.salesforce.com/news/press-releases/2013/07/12/salesforce-com-completes-acquisition-of-exacttarget/" target="_blank" rel="noopener">Salesforce Completes Acquisition of ExactTarget</a> - Original 2013 acquisition press release</li>
             </ul>
+
+            <p><em>This is post 1 of 3 in a series on Salesforce Agentforce Marketing. <a href="salesforce-data-360-2026.html">Post 2</a> covers Data 360 and pricing. <a href="salesforce-campaign-flows-2026.html">Post 3</a> covers the Flows permissions story.</em></p>
         </article>
 
         <!-- Author Bio -->
@@ -273,12 +275,29 @@
         </footer>
     </main>
 
+    <!-- Image Modal -->
+    <dialog class="img-modal" id="imgModal">
+        <img src="" alt="">
+    </dialog>
+
     <!-- Dark Mode Toggle -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
     <script>
+        // Image Modal
+        const modal = document.getElementById('imgModal');
+        const modalImg = modal.querySelector('img');
+        document.querySelectorAll('.blog-body figure img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modal.showModal();
+            });
+        });
+        modal.addEventListener('click', () => modal.close());
+
         // Dark Mode Toggle
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;

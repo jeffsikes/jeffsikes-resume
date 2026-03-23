@@ -212,7 +212,7 @@
 
             <p>Whatever path you choose, the one thing I'd push you to do today is get Data 360 provisioned in your org through Salesforce Foundations. It's free. It doesn't commit you to anything. And when the time comes to enable Agentforce features or move to MCE+, you'll be glad you already have the foundation in place. The <a href="https://trailhead.salesforce.com/content/learn/trails/grow-your-business-with-salesforce-foundations" target="_blank" rel="noopener">Grow Your Business with Salesforce Foundations</a> trail on Trailhead walks through the setup.</p>
 
-            <p><em>This is post 2 of 5 in a series on Salesforce Agentforce Marketing. <a href="salesforce-marketing-cloud-2026.html">Post 1</a> covered the landscape. Post 3 covers the Flows permissions story. Posts 4 and 5 cover new Flow features and Two-Way Conversations.</em></p>
+            <p><em>This is post 2 of 3 in a series on Salesforce Agentforce Marketing. <a href="salesforce-marketing-cloud-2026.html">Post 1</a> covered the landscape. <a href="salesforce-campaign-flows-2026.html">Post 3</a> covers the Flows permissions story.</em></p>
 
             <h2>References</h2>
             <ul class="references">
@@ -262,12 +262,29 @@
         </footer>
     </main>
 
+    <!-- Image Modal -->
+    <dialog class="img-modal" id="imgModal">
+        <img src="" alt="">
+    </dialog>
+
     <!-- Dark Mode Toggle -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
     <script>
+        // Image Modal
+        const modal = document.getElementById('imgModal');
+        const modalImg = modal.querySelector('img');
+        document.querySelectorAll('.blog-body figure img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modal.showModal();
+            });
+        });
+        modal.addEventListener('click', () => modal.close());
+
         // Dark Mode Toggle
         const themeToggle = document.getElementById('themeToggle');
         const html = document.documentElement;
