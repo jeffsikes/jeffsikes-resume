@@ -13,7 +13,7 @@
 
 # Jeff Sikes
 
-> Technology leader based in Austin, TX with 13+ years in non-profit association management. Most recently Director of Application Development at AANP. Currently open to new opportunities.
+> Technology leader based in Austin, TX with 13+ years in non-profit association management. Formerly Director of Application Development at AANP, currently a Senior Technology Consultant at Precision Consulting on a contract-to-hire engagement. Open to new opportunities.
 
 ## Background
 
@@ -27,7 +27,9 @@ He worked his way up through developer, team lead, manager, and director roles. 
 
 Jeff built his first in-house development team from scratch at AANP, hiring and mentoring developers and project managers. He served as acting VP of IT for six months, overseeing both application development and infrastructure teams (9 staff total). He led a two-year enterprise Salesforce implementation (Unlimited Edition) and managed the migration of 400,000+ contacts and nearly one million orders from Aptify to Salesforce.
 
-After departing his Director role at AANP in late 2025, Jeff signed a 3-month contract with the organization to complete a thorough knowledge transfer. This included creating training videos, writing documentation, and building a Cloudflare AutoRAG MCP server containing institutional knowledge along with a chat interface for staff to query it. He is currently exploring new opportunities.
+After departing his Director role at AANP in late 2025, Jeff signed a 3-month contract with the organization to complete a thorough knowledge transfer. This included creating training videos, writing documentation, and building a Cloudflare AutoRAG MCP server containing institutional knowledge along with a chat interface for staff to query it.
+
+Since March 2026 he has been working as a Senior Technology Consultant with Precision Consulting, a contract-to-hire engagement with a regional cooperative banking organization where he builds REST APIs and supports an nCino / Salesforce implementation. The contract runs through the end of June. He remains open to new opportunities, particularly leadership roles at mission-driven organizations.
 
 ## Contact
 
@@ -38,6 +40,7 @@ After departing his Director role at AANP in late 2025, Jeff signed a 3-month co
 
 ## Career History
 
+- Senior Technology Consultant, Precision Consulting (Mar 2026 - Present) - Contract-to-hire with a regional cooperative banking organization; APIs and nCino / Salesforce rollout
 - Technology Consultant, BOX464 Holdings, LLC (Nov 2025 - Jan 2026) - Contract with AANP for knowledge transfer
 - Director of Application Development, AANP (2023-2025)
 - Application Development Manager, AANP (2017-2023)

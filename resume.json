@@ -22,6 +22,17 @@
   },
   "work": [
     {
+      "name": "Precision Consulting",
+      "position": "Senior Technology Consultant",
+      "startDate": "2026-03",
+      "location": "Austin, TX (Remote)",
+      "summary": "Contract-to-hire engagement with a regional cooperative banking organization, building APIs and supporting an nCino / Salesforce implementation.",
+      "highlights": [
+        "Designing and building REST APIs to support core banking operations and system integrations",
+        "Assisting with an nCino / Salesforce rollout across the organization"
+      ]
+    },
+    {
       "name": "BOX464 Holdings, LLC",
       "position": "Technology Consultant",
       "startDate": "2025-11",
@@ -222,6 +233,6 @@
   "meta": {
     "canonical": "https://jeffsikes.com/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-17"
+    "lastModified": "2026-05-31"
   }
 }
