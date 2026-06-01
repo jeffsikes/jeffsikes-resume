@@ -17,10 +17,10 @@
   --color-card-bg: #ffffff;
   --color-card-border: #e7dfd2;
   --color-link: #9c4f27;        /* deep sienna - AA on paper */
-  --font-display: 'DM Serif Display', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
 
-  /* ----- To try a calmer "mission" variant, swap the four lines above
+  /* ----- To try a calmer "mission" variant, swap the four accent lines above
      for these (pine/teal accent on the same warm paper) and reload:
        --color-accent: #2f6f5e;
        --color-accent-soft: #6aa192;
