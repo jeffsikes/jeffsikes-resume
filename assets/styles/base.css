@@ -17,8 +17,11 @@
   --color-card-bg: #ffffff;
   --color-card-border: #e7dfd2;
   --color-link: #9c4f27;        /* deep sienna - AA on paper */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+  /* Type: IBM Plex Serif (display) + IBM Plex Sans (body).
+     Fraunces+Atkinson and Newsreader+Public Sans were also trialed; to revisit,
+     re-add their family to the Google Fonts <link> and swap the two lines below. */
+  --font-display: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
 
   /* Recurring text sizes (each used 5+ times across the site) - one place to
      tune the small UI/body text. Display heading sizes stay per-component. */

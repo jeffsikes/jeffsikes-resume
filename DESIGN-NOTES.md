@@ -16,10 +16,7 @@ I called it "Reading Room." Your palette (warm terracotta on cream) was already 
 
 ## What changed in the look
 
-**The fonts.** This is the big one from your "looks like the font Claude always uses" note. You were right - it was DM Sans. New pairing:
-- Body is now **Atkinson Hyperlegible**, built by the Braille Institute (a nonprofit) specifically for low-vision readability. Clean, friendly, and its whole reason to exist is accessibility - which fits an accessibility-minded, mission-driven profile almost too well.
-- Headings are **Fraunces**, a warm high-contrast old-style serif with real character (look at the "Jeff Sikes" on the homepage). Set at weight 500 so it keeps presence, since the old display face was naturally heavier.
-- Both are free Google Fonts, CDN-loaded, no build step.
+**The fonts.** This is the big one from your "looks like the font Claude always uses" note. You were right - it was DM Sans. After comparing three pairings live, you picked **IBM Plex Serif (headings) + IBM Plex Sans (body)** - IBM's bespoke superfamily, technical and engineered, a "I build things" signal without being cold. Headings sit at weight 500 for presence. Free Google Fonts, CDN-loaded, no build step. (Fraunces+Atkinson Hyperlegible and Newsreader+Public Sans were the other two finalists - the swap is two lines in base.css plus re-adding the family to the font link if you ever want to revisit.)
 
 **Bigger type, everywhere.** Base font went 15px to 18px (`--pico-font-size`). Since the site is almost all `rem`, that one change scaled everything up ~20%. Long-form copy got a small extra bump.
 
@@ -53,7 +50,6 @@ Open http://localhost:8765/ and click around. Gear in the corner toggles dark mo
 
 ## Stuff to react to
 
-- **Fonts** are the main thing to judge - that's what you reacted to. If Fraunces feels too characterful for the headings, I have two backups ready (IBM Plex, or Newsreader).
 - **18px base** might feel big at first. 17px (`106.25%`) is a safe middle if so.
 - **Accent stays warm terracotta.** The pine/teal you tried is still a commented swap near the top of `base.css` (four lines) if you want to flip back to it.
 - **Delete this file before merging.** It's just for the review.
