@@ -14,28 +14,7 @@ nav.story-nav {
   margin-bottom: 3rem;
 }
 
-nav.story-nav a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-color: var(--color-accent-bg);
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-nav.story-nav a:hover {
-  background-color: var(--color-accent);
-  color: var(--color-card-bg);
-}
-
-nav.story-nav a:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
-}
+/* nav.story-nav a (circular back-button) is defined in base.css */
 
 nav.story-nav span {
   font-family: var(--font-display);
@@ -92,16 +71,7 @@ nav.story-nav span {
   margin-bottom: 1.5rem;
 }
 
-/* Drop Cap */
-.story-body > p:first-child::first-letter {
-  font-family: var(--font-display);
-  font-size: 3.2em;
-  float: left;
-  color: var(--color-accent);
-  margin-right: 0.1em;
-  margin-top: 0.05em;
-  line-height: 1;
-}
+/* Drop cap is defined in base.css (shared with blog) */
 
 /* ========== TESTIMONIAL ========== */
 .testimonial {

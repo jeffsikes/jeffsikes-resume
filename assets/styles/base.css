@@ -163,6 +163,48 @@ hr {
   border: none;
 }
 
+/* Circular icon back-button - shared by story, blog, and resume top nav */
+nav.story-nav a,
+nav.blog-nav a.back-btn,
+.resume-nav a.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav.story-nav a:hover,
+nav.blog-nav a.back-btn:hover,
+.resume-nav a.back-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-card-bg);
+}
+
+nav.story-nav a:focus-visible,
+nav.blog-nav a.back-btn:focus-visible,
+.resume-nav a.back-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Drop cap on the first paragraph - shared by story and blog bodies */
+.story-body > p:first-child::first-letter,
+.blog-body > p:first-child::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.2em;
+  float: left;
+  color: var(--color-accent);
+  margin-right: 0.1em;
+  margin-top: 0.05em;
+  line-height: 1;
+}
+
 /* ========== TECH TAGS ========== */
 .tech-tags {
   display: flex;
