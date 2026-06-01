@@ -5,18 +5,28 @@
 }
 
 :root {
-  --color-bg: #faf8f5;
-  --color-bg-alt: #f0ece6;
-  --color-text: #2d2926;
-  --color-text-muted: #6b6560;
-  --color-accent: #c2703e;
-  --color-accent-soft: #e8a878;
-  --color-accent-bg: #fdf0e6;
+  /* ===== Warm editorial palette ("Reading Room") ===== */
+  --color-bg: #faf7f1;          /* warm paper */
+  --color-bg-alt: #f1eae0;      /* sectioned bands */
+  --color-heading: #2a2420;     /* espresso - headings carry the weight */
+  --color-text: #38322c;        /* body ink - full contrast, still warm */
+  --color-text-muted: #6c635a;  /* secondary: dates, captions, meta only */
+  --color-accent: #b85c33;      /* deepened sienna terracotta */
+  --color-accent-soft: #e2a673;
+  --color-accent-bg: #f8ebdd;
   --color-card-bg: #ffffff;
-  --color-card-border: #e8e2db;
-  --color-link: #9e5a30;
+  --color-card-border: #e7dfd2;
+  --color-link: #9c4f27;        /* deep sienna - AA on paper */
   --font-display: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
+
+  /* ----- To try a calmer "mission" variant, swap the four lines above
+     for these (pine/teal accent on the same warm paper) and reload:
+       --color-accent: #2f6f5e;
+       --color-accent-soft: #6aa192;
+       --color-accent-bg: #e6efe9;
+       --color-link: #2a6353;
+     Dark-mode accents would become #7fc4af / #5a9b88 / #1f2e29 / #7fc4af. ----- */
 
   /* Override Pico defaults */
   --pico-background-color: var(--color-bg);
@@ -27,15 +37,16 @@
   --pico-card-background-color: var(--color-card-bg);
   --pico-card-border-color: var(--color-card-border);
   --pico-font-family: var(--font-body);
-  --pico-font-size: 93.75%;
-  --pico-line-height: 1.6;
+  --pico-font-size: 112.5%;     /* 18px base - up from 15px, the headline change */
+  --pico-line-height: 1.65;
 }
 
 [data-theme="dark"] {
-  --color-bg: #1c1a18;
-  --color-bg-alt: #262320;
-  --color-text: #f2ede8;
-  --color-text-muted: #c4bbb2;
+  --color-bg: #1b1916;
+  --color-bg-alt: #252220;
+  --color-heading: #f7f2ea;
+  --color-text: #ece4da;        /* brighter body copy for night reading */
+  --color-text-muted: #c2b9af;
   --color-accent: #f0b888;
   --color-accent-soft: #d4915a;
   --color-accent-bg: #2e2218;
@@ -54,6 +65,10 @@
 
 * { box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -63,17 +78,42 @@ html, body {
 
 body {
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Faint warm light from the top - depth without noise */
+  background-image: radial-gradient(115% 55% at 50% -8%, var(--color-accent-bg) 0%, transparent 58%);
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  color: var(--color-text);
+  color: var(--color-heading);
+  line-height: 1.15;
+  letter-spacing: -0.012em;
 }
 
 a { color: var(--color-link); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; text-underline-offset: 0.16em; text-decoration-thickness: 1.5px; }
+
+/* ===== Accessibility ===== */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  /* Avatar cycles via opacity keyframes - pin it to the first image when motion is off */
+  .hero .avatar-wrap img { opacity: 0 !important; animation: none !important; }
+  .hero .avatar-wrap img:first-child { opacity: 1 !important; }
+}
 
 article {
   border-color: var(--color-card-border);

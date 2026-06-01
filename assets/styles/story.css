@@ -86,9 +86,9 @@ nav.story-nav span {
 }
 
 .story-body p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
 }
 
