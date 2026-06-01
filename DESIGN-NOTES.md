@@ -1,30 +1,47 @@
 # Theme refresh - notes for review
 
-This is the `theme-refresh-2026` branch. Content, structure, and HTML are unchanged. Everything here is CSS plus the inline `<style>` block in resume.html. If you hate it, `git checkout main` and it never happened.
+This is the `theme-refresh-2026` branch. No content or page structure changed - it's all CSS, a font swap, and a tidy-up. Every commit is on the branch, nothing pushed. If you hate it, `git checkout main` and it never happened.
+
+Work through the commits in order if you want the story:
+
+1. New type pairing (Fraunces + Atkinson Hyperlegible)
+2. "Reading Room" restyle (was committed first, but read it second)
+3. Extract resume styles to resume.css
+4. Dedupe shared back-button + drop cap into base.css
+5. Tokenize recurring font sizes into a --fs-* scale
 
 ## The direction
 
-I called it "Reading Room." Your existing palette (warm terracotta on cream) was already good and on-brand, so I didn't throw it out. I leaned into what it was already saying: a thoughtful, warm, well-typeset personal site. Less SaaS landing page, more a quiet editorial publication that happens to be a resume. That felt like the closest match to you - the psychology background, the documenting, the listening, the craft. Personality through type and restraint instead of flash.
+I called it "Reading Room." Your palette (warm terracotta on cream) was already good and on-brand, so I evolved it instead of throwing it out. Less SaaS landing page, more a quiet editorial publication that happens to be a resume. That felt like the closest match to you - the psychology background, the documenting, the listening, the craft. Personality through type and restraint, not flash.
 
-## What actually changed
+## What changed in the look
 
-**Bigger type, everywhere.** This was your main complaint and the biggest lever. Base font went from 15px to 18px (`--pico-font-size` in base.css). Because nearly everything is sized in `rem`, that one change scaled the whole site up about 20%. No per-element busywork. Long-form body copy got a small extra bump on top of that.
+**The fonts.** This is the big one from your "looks like the font Claude always uses" note. You were right - it was DM Sans. New pairing:
+- Body is now **Atkinson Hyperlegible**, built by the Braille Institute (a nonprofit) specifically for low-vision readability. Clean, friendly, and its whole reason to exist is accessibility - which fits an accessibility-minded, mission-driven profile almost too well.
+- Headings are **Fraunces**, a warm high-contrast old-style serif with real character (look at the "Jeff Sikes" on the homepage). Set at weight 500 so it keeps presence, since the old display face was naturally heavier.
+- Both are free Google Fonts, CDN-loaded, no build step.
 
-**Body text is now full contrast.** Story, blog, and resume body copy used to be muted gray (`--color-text-muted`). That read as washed out and sat right at the edge of the accessibility contrast line. It's now full ink (`--color-text`), which reads better and clears WCAG AA comfortably. Muted is reserved for true secondary stuff now - dates, captions, meta.
+**Bigger type, everywhere.** Base font went 15px to 18px (`--pico-font-size`). Since the site is almost all `rem`, that one change scaled everything up ~20%. Long-form copy got a small extra bump.
 
-**Headings got their own color.** New `--color-heading` token, a deeper espresso, so headings carry a little more weight than body. The big "Jeff Sikes" on the homepage uses it.
+**Body text is now full contrast.** Story, blog, and resume body copy was muted gray, sitting right at the accessibility contrast line. It's full ink now (clears WCAG AA), with muted reserved for dates, captions, and meta.
 
-**The accent got a touch deeper.** Terracotta moved from `#c2703e` to `#b85c33` - same family, slightly more grown-up and less "default orange." Link color deepened too for contrast.
+**Headings got their own espresso color** (`--color-heading`), a slightly deeper accent (terracotta `#c2703e` to `#b85c33`), a fading rule trailing each homepage section title, warm card hover borders, a faint warm glow behind the top of each page, and refined link underlines.
 
-**Small editorial touches.** A faint fading rule trails each section title on the homepage. Cards warm their border on hover. A very subtle warm glow sits behind the top of each page. Body links got a proper underline offset so they look intentional when they appear.
+**Accessibility.** Global `:focus-visible` outline and a `prefers-reduced-motion` block that quiets animations - including pinning your cycling avatar to its first frame so it doesn't go blank when motion is off. Microformats and IndieWeb markup untouched (no HTML structure changed).
 
-**Accessibility additions.** A global `:focus-visible` outline, and a `prefers-reduced-motion` block that quiets the animations - including pinning your cycling avatar to the first frame so it doesn't go blank when motion is off. Your microformats and IndieWeb markup are untouched since I didn't touch any HTML structure.
+The PDF download is unaffected. `print.css` sets its own sizes and colors, so the resume export looks exactly like before.
 
-The PDF download is unaffected. `print.css` sets its own font size and colors, so the resume export looks exactly like it did.
+## The CSS consolidation (the part you flagged)
 
-## One thing to try
+Did this as its own pass, after the look was locked, and proved every step changed zero pixels (screenshotted all five page types in both themes before and after, then pixel-diffed - all identical). What got cleaned up:
 
-If you want to see a calmer, cooler version, there's a commented block near the top of `base.css` with a pine/teal accent on the same warm paper. Swap four lines, reload, and you'll get a "mission-driven nonprofit" feel instead of the warm terracotta. I kept the warm one as the default because it's more you, but the option is right there.
+- **resume.html no longer carries ~340 lines of inline `<style>`.** Moved it to `assets/styles/resume.css`, so every page now uses an external stylesheet like the others. resume.html went from ~540 lines to 198.
+- **The circular back-button** was copy-pasted in three files and **the drop cap** in two. Both now live once in `base.css`.
+- **Recurring font sizes** (seven values each used 5+ times - 0.82rem showed up ten times) are now a `--fs-*` scale in base.css. So the small UI/body text has one tuning knob now, the way the base size does.
+
+What I deliberately left alone: the per-page `.theme-toggle` override and the story/blog hero blocks. Those either genuinely differ between pages or would leak onto pages that shouldn't have them. Forcing them into "shared" would have been consolidation for its own sake.
+
+There's more that could be tokenized someday (the badge/pill shapes repeat across `.tech-tag`, `.skill-badge`, `.blog-tag`, etc.), but that one needs small HTML class changes to do cleanly, so I left it for a conversation rather than doing it to your markup unattended.
 
 ## To preview locally
 
@@ -32,10 +49,11 @@ If you want to see a calmer, cooler version, there's a commented block near the 
 python3 -m http.server 8765
 ```
 
-Then open http://localhost:8765/ and click around. Toggle dark mode with the gear in the corner.
+Open http://localhost:8765/ and click around. Gear in the corner toggles dark mode.
 
 ## Stuff to react to
 
-- The 18px base might feel big at first if you're used to the old size. Give it a day before judging. If it's too much, 17px (`106.25%`) is a safe middle.
-- The deeper accent is a small change. If you'd rather keep the original `#c2703e`, it's a one-line revert in base.css.
-- Delete this file before merging. It's just for the review.
+- **Fonts** are the main thing to judge - that's what you reacted to. If Fraunces feels too characterful for the headings, I have two backups ready (IBM Plex, or Newsreader).
+- **18px base** might feel big at first. 17px (`106.25%`) is a safe middle if so.
+- **Accent stays warm terracotta.** The pine/teal you tried is still a commented swap near the top of `base.css` (four lines) if you want to flip back to it.
+- **Delete this file before merging.** It's just for the review.
