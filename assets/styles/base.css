@@ -20,6 +20,16 @@
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
 
+  /* Recurring text sizes (each used 5+ times across the site) - one place to
+     tune the small UI/body text. Display heading sizes stay per-component. */
+  --fs-xs: 0.82rem;
+  --fs-sm: 0.85rem;
+  --fs-smd: 0.88rem;
+  --fs-md: 0.9rem;
+  --fs-base: 0.95rem;
+  --fs-body: 1.05rem;
+  --fs-lg: 1.1rem;
+
   /* ----- To try a calmer "mission" variant, swap the four accent lines above
      for these (pine/teal accent on the same warm paper) and reload:
        --color-accent: #2f6f5e;
@@ -142,7 +152,7 @@ hr {
   cursor: pointer;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s;
-  font-size: 1.1rem;
+  font-size: var(--fs-lg);
   color: var(--color-accent);
 }
 
@@ -221,7 +231,7 @@ nav.blog-nav a.back-btn:focus-visible,
   padding: 0.5rem 1rem;
   border: 2px solid var(--color-card-border);
   border-radius: 999px;
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--color-text);
   background-color: transparent;
@@ -240,7 +250,7 @@ nav.blog-nav a.back-btn:focus-visible,
   margin: 3rem 0 2rem 0;
   color: var(--color-link);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
 }
 
 .back-link:hover {
@@ -251,7 +261,7 @@ nav.blog-nav a.back-btn:focus-visible,
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   color: var(--color-text-muted);
   border-top: 1px solid var(--color-card-border);
   margin-top: 3rem;

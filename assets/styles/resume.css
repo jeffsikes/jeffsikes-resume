@@ -40,7 +40,7 @@
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -74,7 +74,7 @@
 }
 
 .resume-header .label {
-  font-size: 1.1rem;
+  font-size: var(--fs-lg);
   color: var(--color-link);
   font-weight: 500;
   margin-bottom: 1rem;
@@ -85,7 +85,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   color: var(--color-text-muted);
 }
 
@@ -157,31 +157,31 @@
 
 .work-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: var(--fs-body);
   color: var(--color-text);
 }
 
 .work-dates {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   color: var(--color-text-muted);
   white-space: nowrap;
 }
 
 .work-company {
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--color-accent);
   font-weight: 500;
   margin-bottom: 0.4rem;
 }
 
 .work-location {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   color: var(--color-text-muted);
   margin-bottom: 0.5rem;
 }
 
 .work-summary {
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
   line-height: 1.6;
   color: var(--color-text);
   margin-bottom: 0.5rem;
@@ -194,7 +194,7 @@
 }
 
 .work-highlights li {
-  font-size: 0.95rem;
+  font-size: var(--fs-base);
   line-height: 1.6;
   color: var(--color-text);
   padding-left: 1.1rem;
@@ -231,7 +231,7 @@
 }
 
 .edu-left .edu-school {
-  font-size: 0.88rem;
+  font-size: var(--fs-smd);
   color: var(--color-text-muted);
 }
 
@@ -240,12 +240,12 @@
 }
 
 .edu-right .edu-dates {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   color: var(--color-text-muted);
 }
 
 .edu-right .edu-score {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   color: var(--color-accent);
   font-weight: 500;
 }
@@ -259,12 +259,12 @@
 }
 
 .cert-name {
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   color: var(--color-text);
 }
 
 .cert-issuer {
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   color: var(--color-text-muted);
 }
 
@@ -279,13 +279,13 @@
 
 .skills-group-name {
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: var(--fs-smd);
   color: var(--color-text);
   margin-bottom: 0.35rem;
 }
 
 .skills-list {
-  font-size: 0.85rem;
+  font-size: var(--fs-sm);
   color: var(--color-text-muted);
   line-height: 1.6;
 }
