@@ -346,22 +346,6 @@ dialog.img-modal img {
   font-style: italic;
 }
 
-/* ========== DARK MODE TOGGLE (blog override) ========== */
-.theme-toggle {
-  bottom: 2rem;
-  right: 2rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: var(--color-accent);
-  color: var(--color-card-bg);
-  border: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-  background-color: var(--color-accent-soft);
-}
 
 /* ========== BLOG LISTING PAGE ========== */
 .blog-listing-intro {
@@ -472,11 +456,4 @@ dialog.img-modal img {
     font-size: 1.8rem;
   }
 
-  .theme-toggle {
-    bottom: 1rem;
-    right: 1rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    font-size: 1rem;
-  }
 }
