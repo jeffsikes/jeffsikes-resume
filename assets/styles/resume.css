@@ -47,10 +47,18 @@
   transition: background 0.2s;
 }
 
+[data-theme="dark"] .resume-nav .download-btn {
+  color: var(--color-bg);
+}
+
 .resume-nav .download-btn:hover {
   background: var(--color-accent-soft);
   text-decoration: none;
   color: #fff;
+}
+
+[data-theme="dark"] .resume-nav .download-btn:hover {
+  color: var(--color-bg);
 }
 
 .resume-nav .download-btn:focus-visible {

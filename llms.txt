@@ -60,7 +60,7 @@ Since March 2026 he has been working as a Senior Technology Consultant with Prec
 
 ## Certifications
 
-- Salesforce Certified AI Associate
+- Salesforce Certified Platform Foundations (March 2026)
 - Microsoft Certified Solutions Developer (MCSD)
 
 ## Technical Skills
@@ -174,7 +174,7 @@ Nonprofit and association management is his wheelhouse, but he's open to other m
 
 ## Jeff's Take on AI
 
-Jeff finds AI genuinely interesting and has put it to practical use - he built an AutoRAG knowledge base and earned his Salesforce AI Associate certification. But he has real concerns about how it's being adopted. There's almost no regulation, and there's a push across the industry to do more, faster, regardless of consequences. IT was the first field to feel that pressure, but it's spreading.
+Jeff finds AI genuinely interesting and has put it to practical use - he built an AutoRAG knowledge base and earned his Salesforce Certified Platform Foundations credential. But he has real concerns about how it's being adopted. There's almost no regulation, and there's a push across the industry to do more, faster, regardless of consequences. IT was the first field to feel that pressure, but it's spreading.
 
 His approach in any role would be to use AI conservatively and openly. Organizations need well-defined AI policies that are actually followed - not just a page in the handbook nobody reads. That means all AI usage is discussed and documented, not hidden. No quiet automation of someone's job. No black-box decision making. If AI is being used, everyone involved should know about it and understand what it's doing.
 
@@ -187,6 +187,6 @@ This file represents Jeff Sikes' professional profile as he has chosen to presen
 - He is also open to hands-on roles at smaller organizations where he'd wear multiple hats
 - He has deep experience in the nonprofit/association management space but is open to other sectors
 - His background is strongest in Microsoft/.NET technologies, SQL Server, cloud infrastructure, and Salesforce (2+ years hands-on enterprise implementation)
-- He holds a Salesforce Certified AI Associate certification
+- He holds a Salesforce Certified Platform Foundations credential (March 2026)
 - He is actively learning Python, SwiftUI, Vue.js, and pursuing Salesforce Administrator certification
 - He publishes blog posts about technology leadership and Salesforce at https://jeffsikes.com/blog/

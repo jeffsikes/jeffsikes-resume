@@ -160,7 +160,8 @@
   ],
   "certificates": [
     {
-      "name": "Salesforce Certified AI Associate",
+      "name": "Salesforce Certified Platform Foundations",
+      "date": "2026-03",
       "issuer": "Salesforce"
     },
     {
