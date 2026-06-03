@@ -36,12 +36,15 @@
       "name": "BOX464 Holdings, LLC",
       "position": "Technology Consultant",
       "startDate": "2025-11",
-      "endDate": "2026-01",
+      "endDate": "2026-02",
       "location": "Austin, TX (Remote)",
       "summary": "Contracted with AANP to lead a comprehensive knowledge transfer following departure from Director role.",
       "highlights": [
-        "Created training videos and technical documentation covering all internal systems and processes",
-        "Built a Cloudflare AutoRAG MCP server containing institutional knowledge with a chat interface for staff to query"
+        "Designed a multi-source retrieval architecture on Cloudflare AutoRAG across six purpose-specific knowledge bases (raw Salesforce metadata, implementation documentation, video transcripts, requirements docs, working notes, and data migration scripts)",
+        "Built an Anthropic API pipeline that processed 230+ training recordings into structured content with provenance tagging and tiered confidence flags distinguishing demonstration footage from authoritative documentation",
+        "Built a React chat interface combining AutoRAG retrieval with Claude completions for staff use, plus custom MCP integrations",
+        "Configured automated nightly backups from vendor-controlled systems (Bitbucket, ClickUp) so AANP retained independent copies of their own data",
+        "Transferred the full infrastructure to AANP's own Cloudflare and GitHub organization at engagement close"
       ]
     },
     {
