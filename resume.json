@@ -54,7 +54,7 @@
       "startDate": "2023-04",
       "endDate": "2025-11",
       "location": "Austin, TX (Remote)",
-      "summary": "Led cross-functional team of 7 staff (3 developers, 2 project managers, 1 data analyst, 1 business analyst) supporting 120,000 nurse practitioners through member services, education, conferences, and political advocacy.",
+      "summary": "Led cross-functional team of 7 staff (3 developers, 1 project manager, 2 business analysts, 1 data analyst) supporting 460,000 nurse practitioners through member services, education, conferences, and political advocacy.",
       "highlights": [
         "Led enterprise Salesforce implementation (Unlimited Edition) - Sales, Service, Marketing, Commerce, Experience, and Data Cloud - replacing legacy Aptify AMS",
         "Managed data migration from Aptify to Salesforce using CData DBAmp - 400,000+ contacts and nearly one million orders, plus custom object data, maintaining referential integrity throughout",
